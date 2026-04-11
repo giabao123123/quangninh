@@ -1,0 +1,3436 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <title>Quảng Ninh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://giabao123123.github.io/webcon/web%20con.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./logo quảng ninh/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style></style>
+  </head>
+  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
+    <a href="#hero" class="scroll-top-button">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <aside id="backToTop">
+      <a href="#hero" aria-label="Lên đầu trang">
+        <span class="arrow arrow-1"></span>
+        <span class="arrow arrow-2"></span>
+      </a>
+    </aside>
+
+    <aside class="box w3-right neon-box2" style="margin-top: 2%">
+      <p class="text">Chào mừng đến với tỉnh Quảng Ninh!</p>
+    </aside>
+
+    <header class="w3-top">
+      <nav class="w3-bar w3-white w3-padding w3-card">
+        <a href="#home" class="w3-bar-item neon-box">Quảng Ninh</a>
+        <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
+          ❮
+        </button>
+        <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
+          ❯
+        </button>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fffaf0;
+          "
+          class="menu w3-right w3-button"
+          id="menu-list"
+        >
+          <li><a href="#about">LỊCH SỬ HÌNH THÀNH</a></li>
+          <li><a href="#menu">ĐỊA LÝ</a></li>
+          <li><a href="#khihau">KHÍ HẬU</a></li>
+          <li><a href="#DIEUKIENTUNHIEN">ĐIỀU KIỆN TỰ NHIÊN</a></li>
+          <li>
+            <a href="#THOITIET">DỰ BÁO THỜI TIẾT TRONG TỈNH</a>
+          </li>
+          <li><a href="#contact">DÂN CƯ</a></li>
+          <li><a href="#VANHOA">VĂN HOÁ</a></li>
+          <li><a href="#DITICH">DI TÍCH, DI SẢN VĂN HOÁ</a></li>
+          <li><a href="#GIAODUC">GIÁO DỤC</a></li>
+          <li><a href="#KINHTE">KINH TẾ</a></li>
+          <li><a href="#AMTHUC">ẨM THỰC</a></li>
+          <li><a href="#DULICH">DU LỊCH</a></li>
+          <li><a href="#tiemnang">TIỀM NĂNG PHÁT TRIÊN</a></li>
+          <li>
+            <a href="https://giabao123123.github.io/trochoiquangninh/"
+              >TRÒ CHƠI</a
+            >
+          </li>
+        </ul>
+        <script>
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+        </script>
+        <nav
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fff3cd;
+          "
+          class="w3-animate-left w3-hide-small neon-box"
+        >
+          <menu
+            class="menu-scroll"
+            style="margin: 0; padding: 0; display: flex"
+          >
+            <a href="#about" class="w3-bar-item w3-button"
+              >LỊCH SỬ HÌNH THÀNH</a
+            >
+            <a href="#menu" class="w3-bar-item w3-button">ĐỊA LÝ</a>
+            <a href="#DIEUKIENTUNHIEN" class="w3-bar-item w3-button"
+              >ĐIỀU KIỆN TỰ NHIÊN</a
+            >
+            <a href="#khihau" class="w3-bar-item w3-button">KHÍ HẬU</a>
+            <a href="#THOITIET" class="w3-bar-item w3-button"
+              >DỰ BÁO THỜI TIẾT TRONG TỈNH</a
+            >
+            <a href="#contact" class="w3-bar-item w3-button">DÂN CƯ</a>
+            <a href="#VANHOA" class="w3-bar-item w3-button">VĂN HOÁ</a>
+            <a href="#DITICH" class="w3-bar-item w3-button"
+              >DI TÍCH, DI SẢN VĂN HOÁ</a
+            >
+            <a href="#GIAODUC" class="w3-bar-item w3-button">GIÁO DỤC</a>
+            <a href="#KINHTE" class="w3-bar-item w3-button">KINH TẾ</a>
+            <a href="#AMTHUC" class="w3-bar-item w3-button">ẨM THỰC</a>
+            <a href="#DULICH" class="w3-bar-item w3-button">DU LỊCH</a>
+            <a href="#tiemnang" class="w3-bar-item w3-button"
+              >TIỀM NĂNG PHÁT TRIÊN</a
+            >
+            <a
+              href="https://giabao123123.github.io/trochoiquangninh/"
+              class="w3-bar-item w3-button"
+              >TRÒ CHƠI</a
+            >
+          </menu>
+        </nav>
+      </nav>
+    </header>
+
+    <main class="w3-content" style="max-width: 1100px">
+      <section class="w3-row w3-padding-16 w3-animate-left" id="about">
+        <h1 class="w3-center" style="color: red; font-size: 35px">
+          LỊCH SỬ HÌNH THÀNH
+        </h1>
+        <article>
+          <p>
+            <mark><strong>1. Thời tiền sử – sơ sử:</strong></mark
+            ><br />
+            Quảng Ninh có lịch sử cư trú liên tục từ thời tiền sử với các nền
+            văn hóa <u>Soi Nhụ</u>, <u>Hòa Bình</u>, <u>Bắc Sơn</u> và
+            <u>Hạ Long</u>. Vùng đất này đã có cộng đồng dân cư lớn sinh sống
+            trong các hang động, phát triển nền văn hóa độc lập và tạo tiền đề
+            cho sự hình thành các văn hóa tiến bộ sau này. Vào thời Hùng Vương,
+            khu vực Quảng Ninh là bộ phận của nhà nước Văn Lang, thuộc các bộ
+            <u>Ninh Hải</u> và <u>Lục Hải</u>.
+          </p>
+
+          <p>
+            <mark><strong>2. Thời phong kiến:</strong></mark
+            ><br />
+            Quảng Ninh trải qua nhiều lần đổi tên: <u>Lục Châu</u> (thời kỳ tự
+            chủ), <u>Hải Đông</u> (thời Lý – Trần), <u>An Bang</u>,
+            <u>An Quảng</u> (thời Lê – Tây Sơn) và <u>Quảng Yên</u> (thời
+            Nguyễn). Khu vực này có nhiều di tích lịch sử nổi tiếng như
+            <u>sông Bạch Đằng</u>, <u>núi Yên Tử</u>,
+            <u>khu mộ các vua Trần</u> và <u>thương cảng Vân Đồn</u>. Đây cũng
+            là nơi phát triển các huyện, châu, phủ và hình thành cư dân lâu đời.
+          </p>
+
+          <p>
+            <mark><strong>3. Thời Pháp thuộc:</strong></mark
+            ><br />
+            Từ năm <u>1883</u>, Quảng Ninh rơi vào ách thống trị của thực dân
+            Pháp, bị cắt bớt đất phía bắc và trở thành vùng khai thác than quan
+            trọng. Quá trình này dẫn đến sự phân hóa xã hội sâu sắc, đồng thời
+            là nơi giai cấp công nhân Việt Nam hình thành sớm và tham gia các
+            phong trào yêu nước, nổi bật là cuộc Tổng bãi công năm <u>1936</u>.
+          </p>
+
+          <p>
+            <mark><strong>4. Kháng chiến chống Pháp và Mỹ:</strong></mark
+            ><br />
+            Sau Cách mạng tháng Tám <u>1945</u>, quân và dân Quảng Ninh giành
+            chính quyền trong điều kiện khó khăn do Nhật, quân Tưởng và các bọn
+            phản động chiếm đóng. Trong kháng chiến chống Pháp, Quảng Ninh phối
+            hợp đấu tranh vũ trang và chính trị, góp phần quan trọng vào chiến
+            thắng <u>Điện Biên Phủ</u>. Trong chiến tranh phá hoại của Mỹ, nhân
+            dân tỉnh vừa sản xuất vừa chiến đấu bảo vệ miền Bắc.
+          </p>
+
+          <p>
+            <mark><strong>5. Giai đoạn hiện đại:</strong></mark
+            ><br />
+            Năm <u>1963</u>, tỉnh Quảng Ninh được thành lập trên cơ sở hợp nhất
+            khu Hồng Quảng và tỉnh Hải Ninh. Qua các lần sắp xếp hành chính từ
+            <u>1964</u> đến <u>2024</u>, Quảng Ninh hình thành hệ thống
+            <u>5 thành phố</u>, <u>1 thị xã</u> và <u>7 huyện</u>. Ngày nay,
+            Quảng Ninh là tỉnh trọng điểm của vùng Đông Bắc, phát triển về kinh
+            tế, văn hóa, chính trị và du lịch.
+          </p>
+        </article>
+
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a
+            href="https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Ninh"
+            target="_blank"
+            >wiki Quảng Ninh</a
+          >
+          )
+        </p>
+        <figure class="w3-center">
+          <img
+            src="https://www.angsana.com/_next/image?url=https:%2F%2Fwww.angsana.com%2Fassets%2F2024-10%2Fcac-dia-diem-du-lich-tuyet-dep-o-quang-ninh.jpg&w=2048&q=75"
+            class="w3-container"
+            alt="Các địa điểm du lịch tuyệt đẹp ở Quảng Ninh"
+          />
+          <figcaption style="font-size: 15px">
+            (nguồn hình ảnh:
+            <a
+              href="https://www.angsana.com/vi/vietnam/quan-lan/article/cac-dia-diem-du-lich-tuyet-dep-o-quang-ninh"
+              target="_blank"
+              >angsana.com</a
+            >
+            )
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section class="w3-row-padding w3-padding-16 w3-content" id="menu">
+        <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+          ĐỊA LÝ
+        </h1>
+        <article>
+          <p>
+            Tỉnh Quảng Ninh có vị trí ở địa đầu đông bắc Việt Nam, lãnh thổ trải
+            theo hướng đông bắc - tây nam. Quảng Ninh nằm cách thủ đô Hà Nội 125
+            km về phía Đông Bắc.
+          </p>
+          <p>
+            Quảng Ninh là 1 trong số 7 tỉnh thành tại Việt Nam có đường biên
+            giới với Trung Quốc, nhưng lại là tỉnh duy nhất có cả đường biên
+            giới trên bộ và trên biển với nước này.
+          </p>
+          <p><strong>Điểm cực của tỉnh:</strong></p>
+          <ul>
+            <li>
+              Điểm cực đông phần đất liền và hải đảo tại: mũi Sa Vĩ, phường Móng
+              Cái 1 - khoảng <u>20°24′B, 107°50′Đ</u>
+            </li>
+            <li>
+              Điểm cực tây tại: phường Đông Triều - khoảng
+              <u>21°03′B, 106°45′Đ</u>
+            </li>
+            <li>
+              Điểm cực nam tại: đảo Hạ Mai, đặc khu Vân Đồn - khoảng
+              <u>20°50′B, 107°45′Đ</u>
+            </li>
+            <li>
+              Điểm cực bắc tại: xã Hoành Mô - khoảng <u>21°36′B, 107°40′Đ</u>
+            </li>
+          </ul>
+          <p><strong>Tiếp giáp:</strong></p>
+          <ul>
+            <li>Phía đông giáp Vịnh Bắc Bộ</li>
+            <li>Phía tây giáp tỉnh Bắc Ninh và tỉnh Lạng Sơn</li>
+            <li>Phía nam giáp thành phố Hải Phòng và Vịnh Bắc Bộ</li>
+            <li>Phía bắc giáp khu tự trị Quảng Tây, Trung Quốc.</li>
+          </ul>
+        </article>
+        <p style="font-size: 15px">
+          Nguồn thông tin:
+          <a
+            href="https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Ninh"
+            target="_blank"
+            >Wikipedia – Quảng Ninh</a
+          >
+        </p>
+        <figure class="w3-center">
+          <img
+            src="https://cdn.diaocthongthai.com/map/VNM/map_hd_1_ttxvn_2025/quang_ninh.jpg"
+            class="w3-round w3-image w3-opacity-min w3-center"
+            alt="Bản đồ Quảng Ninh"
+            style="width: 75%"
+          />
+          <div class="text-overlay"></div>
+          <figcaption style="font-size: 15px">
+            Nguồn hình ảnh:
+            <a
+              href="https://diaocthongthai.com/ban-do-quang-ninh-new-2025/"
+              target="_blank"
+              >diaocthongthai.com</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section
+        class="w3-row-padding w3-padding-16 w3-content"
+        id="DIEUKIENTUNHIEN"
+      >
+        <h1 class="w3-center" style="font-size: 50px">ĐIỀU KIỆN TỰ NHIÊN</h1>
+        <article>
+          <p>
+            <strong><mark>Địa hình:</mark></strong> Quảng Ninh có địa hình đa
+            dạng như một "Việt Nam thu nhỏ", gồm đồng bằng, trung du, núi đá vôi
+            và hải đảo. Hơn <u>80%</u> diện tích là đồi núi, với hơn
+            <u>2.000</u> đảo, phần lớn chưa đặt tên. Địa hình có thể chia thành
+            ba vùng: vùng núi, vùng trung du và đồng bằng ven biển, và vùng biển
+            – hải đảo.
+          </p>
+
+          <p>
+            Vùng núi gồm hai miền: miền Đông tiếp giáp Trung Quốc với các dãy
+            núi Quảng Nam Châu (<u>1.507 m</u>), Cao Xiêm (<u>1.472 m</u>), Ngàn
+            Chi (<u>1.166 m</u>); miền Tây thấp dần, với cánh cung Đông Triều
+            gồm đỉnh Yên Tử (<u>1.068 m</u>) và Am Váp (<u>1.094 m</u>), là
+            xương sống địa hình của tỉnh.
+          </p>
+
+          <p>
+            Vùng trung du và đồng bằng ven biển là các dải đồi thấp, bồi lắng
+            phù sa, thuận lợi cho nông nghiệp và giao thông, gồm Đông Triều,
+            Uông Bí, Quảng Yên, Tiên Yên, Hải Hà, Đầm Hà và Móng Cái.
+          </p>
+
+          <p>
+            Vùng biển và hải đảo gồm hơn <u>2.000</u> đảo, trải dài
+            <u>250 km</u>, chiếm <u>11,5%</u> diện tích tự nhiên. Nhiều đảo đá
+            vôi tạo cảnh quan karst độc đáo, cùng các bãi cát trắng và nguồn tài
+            nguyên khai thác thủy sản, du lịch.
+          </p>
+
+          <p>
+            <strong><mark>Tài nguyên đất:</mark></strong> Tổng quỹ đất
+            <u>611.081,3 ha</u>, trong đó 10% đất nông nghiệp, 38% rừng, 43,8%
+            chưa sử dụng. Các loại đất chính gồm: đất feralit vàng đỏ (cao và
+            thấp), đất phù sa (<u>40.105 ha</u>), đất mặn ven biển (<u
+              >50.900 ha</u
+            >), đất cát ven biển (<u>6.087 ha</u>), đất đồi núi đá vôi trên các
+            đảo (<u>46.627 ha</u>).
+          </p>
+
+          <p>
+            <strong><mark>Tài nguyên rừng:</mark></strong> Diện tích rừng và đất
+            rừng <u>243.833,2 ha</u>, chiếm 38% diện tích tự nhiên, trong đó
+            rừng tự nhiên chiếm khoảng 80%, còn lại là rừng trồng và rừng đặc
+            sản.
+          </p>
+
+          <p>
+            <strong><mark>Tài nguyên biển:</mark></strong> Quảng Ninh có
+            <u>2.077</u> đảo, đường bờ biển dài <u>250 km</u>, ngư trường rộng
+            <u>6.100 km²</u>, thuận lợi cho khai thác thủy sản, phát triển cảng
+            biển và giao thông đường thủy.
+          </p>
+
+          <p>
+            <strong><mark>Sông ngòi và tài nguyên nước:</mark></strong> Có
+            khoảng <u>30</u> sông suối >10 km, gồm các sông lớn Bạch Đằng, Ka
+            Long, Tiên Yên, Ba Chẽ. Lưu lượng thay đổi lớn theo mùa: mùa khô
+            <u>1,45 m³/s</u>, mùa mưa <u>1.500 m³/s</u>. Quảng Ninh có nguồn
+            nước ngầm và ao hồ thích hợp nuôi trồng thủy sản.
+          </p>
+
+          <p>
+            <strong><mark>Khoáng sản:</mark></strong> Than đá trữ lượng
+            <u>3,6 tỷ tấn</u>, tập trung Hạ Long, Cẩm Phả, Uông Bí – Đông Triều.
+            Các mỏ đá vôi, cao lanh, đất sét phân bố rộng, cùng nhiều điểm nước
+            khoáng có thể khai thác.
+          </p>
+        </article>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Ninh"
+            >wiki Quảng Ninh</a
+          >)
+        </p>
+      </section>
+      <hr />
+
+      <section
+        class="w3-container w3-padding-16 table-responsive w3-content"
+        style="overflow-x: auto"
+        id="khihau"
+      >
+        <h1 style="font-size: 50px">KHÍ HẬU</h1>
+        <br />
+        <article>
+          <p>
+            <strong><mark>Khí hậu:</mark></strong> Quảng Ninh nằm trong vùng khí
+            hậu cận nhiệt đới ẩm đặc trưng miền Bắc, với một mùa hạ nóng ẩm mưa
+            nhiều và một mùa đông lạnh khô, ít mưa. Do vị trí địa lý và địa
+            hình, tỉnh chịu ảnh hưởng mạnh của gió mùa Đông Bắc và yếu của gió
+            mùa Tây Nam. Các quần đảo như Cô Tô, Vân Đồn có đặc trưng khí hậu
+            đại dương, phân hóa thành hai mùa: mùa hạ nóng ẩm mưa nhiều và mùa
+            đông lạnh khô. Độ ẩm trung bình <u>82–85%</u>. Mùa lạnh từ hạ tuần
+            tháng 11 đến cuối tháng 3, mùa nóng từ tháng 5 đến đầu tháng 10. Hai
+            tháng chuyển tiếp là tháng 4 và tháng 10. Biển mang lại khí hậu mát
+            mẻ, ấm áp, thuận lợi cho nông nghiệp và lâm nghiệp.
+          </p>
+
+          <p>
+            <strong><mark>Nhiệt độ:</mark></strong> Nhiệt độ trung bình năm
+            <u>21–23°C</u>. Chênh lệch giữa mùa đông (tháng 1) và mùa hạ (tháng
+            7) là <u>12°C</u>, thấp hơn cùng vĩ tuyến <u>5,1°C</u>. Tháng 12 –
+            tháng 1, vùng núi và miền núi Hạ Long có sương muối, một số năm còn
+            có mưa tuyết.
+          </p>
+
+          <p>
+            <strong><mark>Mưa:</mark></strong> Lượng mưa trung bình năm
+            <u>1.995 mm</u>, tập trung <u>85%</u> vào mùa hạ. Vùng mưa nhiều
+            nhất: sườn nam và đông nam cánh cung Đông Triều, đồng bằng duyên hải
+            Móng Cái, Tiên Yên, Hải Hà, đạt <u>2.400 mm</u>/năm. Vùng ít mưa
+            nhất: sườn bắc cánh cung Đông Triều, Ba Chẽ, <u>1.400 mm</u>/năm.
+            Vùng hải đảo: <u>1.700–1.800 mm</u>/năm.
+          </p>
+
+          <p>
+            <strong><mark>Gió:</mark></strong> Quảng Ninh chịu chế độ gió mùa rõ
+            rệt. Gió mùa hạ (tháng 5–10) hướng đông nam, gây mưa lớn; thường có
+            áp thấp nhiệt đới và <u>5–6 cơn bão</u>/năm từ Tây Thái Bình Dương.
+            Gió mùa đông (tháng 11 – tháng 4) hướng đông bắc, thời tiết lạnh
+            khô.
+          </p>
+        </article>
+        <figure>
+          <table
+            style="
+              width: 100%;
+              border-color: rgb(162, 169, 177);
+              background-color: rgb(234, 236, 240);
+            "
+          >
+            <tbody>
+              <tr>
+                <th colspan="14">Dữ liệu khí hậu của Quảng Ninh</th>
+              </tr>
+              <tr>
+                <th scope="row">Tháng</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+                <th scope="col">5</th>
+                <th scope="col">6</th>
+                <th scope="col">7</th>
+                <th scope="col">8</th>
+                <th scope="col">9</th>
+                <th scope="col">10</th>
+                <th scope="col">11</th>
+                <th scope="col">12</th>
+                <th>Năm</th>
+              </tr>
+              <tr style="text-align: center">
+                <th>Kỷ lục cao °C (°F)</th>
+                <td style="background: #ff9999">33<br />(91)</td>
+                <td style="background: #ff8080">36.6<br />(98)</td>
+                <td style="background: #ff6666">39.5<br />(103)</td>
+                <td style="background: #ff4d4d">39.5<br />(103)</td>
+                <td style="background: #ed0000; color: white">
+                  40.5<br />(105)
+                </td>
+                <td style="background: #ff3333">39.5<br />(103)</td>
+                <td style="background: #ed0000; color: white">
+                  40.5<br />(105)
+                </td>
+                <td style="background: #ff4d4d">39.6<br />(103)</td>
+                <td style="background: #ff6666">37.1<br />(99)</td>
+                <td style="background: #ff8080">34<br />(93)</td>
+                <td style="background: #ff9999">31<br />(88)</td>
+                <td style="background: #ffb3b3">30<br />(86)</td>
+                <td style="background: #ed0000; color: white">
+                  ~40.5<br />(105)
+                </td>
+              </tr>
+              <tr style="text-align: center">
+                <th>Trung bình ngày tối đa °C (°F)</th>
+                <td style="background: #ffe0b3">21.8<br />(71)</td>
+                <td style="background: #ffe6b3">22.9<br />(73)</td>
+                <td style="background: #ffecb3">25.0<br />(77)</td>
+                <td style="background: #fff2b3">29.1<br />(84)</td>
+                <td style="background: #fff7b3">32.4<br />(90)</td>
+                <td style="background: #fffbb3">34.4<br />(94)</td>
+                <td style="background: #fffbb3">34.2<br />(93)</td>
+                <td style="background: #fff7b3">33.2<br />(92)</td>
+                <td style="background: #fff2b3">30.8<br />(87)</td>
+                <td style="background: #ffecb3">28.6<br />(83)</td>
+                <td style="background: #ffe6b3">24<br />(75)</td>
+                <td style="background: #ffe0b3">22<br />(72)</td>
+                <td style="background: #ffd4a3">29<br />(84)</td>
+              </tr>
+              <tr style="text-align: center">
+                <th>Trung bình ngày °C (°F)</th>
+                <td style="background: #ffe6cc">14.4<br />(58)</td>
+                <td style="background: #ffedcc">16.3<br />(61)</td>
+                <td style="background: #fff3cc">19.1<br />(66)</td>
+                <td style="background: #fff9cc">23.1<br />(73)</td>
+                <td style="background: #ffffcc">25.8<br />(78)</td>
+                <td style="background: #ffffb3">27.5<br />(81)</td>
+                <td style="background: #ffffb3">27.6<br />(81)</td>
+                <td style="background: #ffffb3">27.5<br />(81)</td>
+                <td style="background: #ffffcc">26.5<br />(80)</td>
+                <td style="background: #fff9cc">24.0<br />(75)</td>
+                <td style="background: #fff3cc">20.5<br />(69)</td>
+                <td style="background: #ffeccc">15.8<br />(60)</td>
+                <td style="background: #ffd4a3">23<br />(73)</td>
+              </tr>
+              <tr style="text-align: center">
+                <th>Tối thiểu trung bình ngày °C (°F)</th>
+                <td style="background: #fff0d9">11.8<br />(53)</td>
+                <td style="background: #fff3d9">13.8<br />(57)</td>
+                <td style="background: #fff7d9">16.8<br />(62)</td>
+                <td style="background: #fffccc">21.0<br />(70)</td>
+                <td style="background: #ffffcc">24.0<br />(75)</td>
+                <td style="background: #ffffcc">25.9<br />(78)</td>
+                <td style="background: #ffffcc">26.0<br />(79)</td>
+                <td style="background: #ffffcc">25.7<br />(78)</td>
+                <td style="background: #ffffcc">24.4<br />(76)</td>
+                <td style="background: #fff7cc">21.8<br />(71)</td>
+                <td style="background: #fff3cc">17.5<br />(63)</td>
+                <td style="background: #ffead0">13.8<br />(57)</td>
+                <td style="background: #ffd4a3">21.8<br />(71)</td>
+              </tr>
+              <tr style="text-align: center">
+                <th>Kỷ lục thấp °C (°F)</th>
+                <td style="background: #cce5ff">0<br />(32)</td>
+                <td style="background: #cce5ff">0<br />(32)</td>
+                <td style="background: #99ccff">5<br />(41)</td>
+                <td style="background: #66b2ff">8<br />(46)</td>
+                <td style="background: #3399ff">12<br />(54)</td>
+                <td style="background: #3399ff">15<br />(59)</td>
+                <td style="background: #3399ff">17<br />(63)</td>
+                <td style="background: #3399ff">17<br />(63)</td>
+                <td style="background: #66b2ff">15<br />(59)</td>
+                <td style="background: #99ccff">10<br />(50)</td>
+                <td style="background: #cce5ff">3<br />(37)</td>
+                <td style="background: #cce5ff">1<br />(34)</td>
+                <td style="background: #cce5ff">~0<br />(32)</td>
+              </tr>
+              <tr style="text-align: center">
+                <th>Lượng mưa trung bình mm (inches)</th>
+                <td style="background: #e0ffe0">77<br />(3.0)</td>
+                <td style="background: #d4ffd4">63<br />(2.5)</td>
+                <td style="background: #bfffbc">83<br />(3.3)</td>
+                <td style="background: #99ff99">80<br />(3.1)</td>
+                <td style="background: #66ff66">221<br />(8.7)</td>
+                <td style="background: #33cc33; color: white">
+                  301<br />(11.9)
+                </td>
+                <td style="background: #009900; color: white">
+                  395<br />(15.6)
+                </td>
+                <td style="background: #009900; color: white">
+                  361<br />(14.2)
+                </td>
+                <td style="background: #33cc33; color: white">
+                  254<br />(10.0)
+                </td>
+                <td style="background: #66ff66">145<br />(5.7)</td>
+                <td style="background: #99ff99">70<br />(2.8)</td>
+                <td style="background: #bfffbc">50<br />(2.0)</td>
+                <td style="background: #004c00; color: white">
+                  ~2,000<br />(79)
+                </td>
+              </tr>
+              <tr style="text-align: center">
+                <th>Số ngày mưa trung bình</th>
+                <td style="background: #b3b3ff">10</td>
+                <td style="background: #b3b3ff">10</td>
+                <td style="background: #9999ff">11</td>
+                <td style="background: #8080ff">11</td>
+                <td style="background: #6666ff">15</td>
+                <td style="background: #4d4dff">17</td>
+                <td style="background: #3333ff; color: white">18</td>
+                <td style="background: #3333ff; color: white">17</td>
+                <td style="background: #4d4dff">14</td>
+                <td style="background: #6666ff">9</td>
+                <td style="background: #8080ff">6</td>
+                <td style="background: #9999ff">5</td>
+                <td style="background: #0000ff; color: white">~133</td>
+              </tr>
+              <tr style="text-align: center">
+                <th>Độ ẩm trung bình (%)</th>
+                <td style="background: #99ccff">76</td>
+                <td style="background: #99ccff">81</td>
+                <td style="background: #80bfff">83</td>
+                <td style="background: #66b2ff">85</td>
+                <td style="background: #3399ff">85</td>
+                <td style="background: #007fff; color: white">86</td>
+                <td style="background: #007fff; color: white">87</td>
+                <td style="background: #3399ff">86</td>
+                <td style="background: #66b2ff">82</td>
+                <td style="background: #3399ff">80</td>
+                <td style="background: #99ccff">75</td>
+                <td style="background: #66b2ff">76</td>
+                <td style="background: #007fff; color: white">82</td>
+              </tr>
+              <tr style="text-align: center">
+                <th>Số giờ nắng trung bình tháng</th>
+                <td style="background: #cccccc">4.0</td>
+                <td style="background: #bbbbbb">3.0</td>
+                <td style="background: #aaaaaa">3.0</td>
+                <td style="background: #999900">6.0</td>
+                <td style="background: #dddd00">8.0</td>
+                <td style="background: #d6d600">9.0</td>
+                <td style="background: #cccc00">9.0</td>
+                <td style="background: #cfcf00">9.0</td>
+                <td style="background: #d2d200">8.0</td>
+                <td style="background: #cbcb00">7.0</td>
+                <td style="background: #c0c024">5.0</td>
+                <td style="background: #b8b855">3.0</td>
+                <td style="background: #999900">78</td>
+              </tr>
+            </tbody>
+          </table>
+          <figcaption style="font-size: 15px">
+            (Nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Ninh"
+              target="_blank"
+              >Wikipedia Quảng Ninh</a
+            >,
+            <a
+              href="https://www.thoitiet.tv/khi-hau-quang-ninh-nhu-the-nao-thong-ke-chi-tiet-cac-thong-so-trong-12-thang-a5362.html"
+              target="_blank"
+              >Thoitiet.tv</a
+            >,
+            <a
+              href="https://vmrcc.gov.vn/thong-tin-khi-tuong-thuy-van/dac-diem-khi-hau-thuy-van-khu-vuc-vinh-bac-bo-711.html"
+              target="_blank"
+              >VMRCC</a
+            >)
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+      <section class="w3-row-padding w3-padding-16" id="THOITIET">
+        <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+          DỰ BÁO THỜI TIẾT TRONG TỈNH
+        </h1>
+        <div
+          style="
+            max-width: 760px;
+            margin: 0 auto;
+            font-family: &quot;Montserrat&quot;, Arial, sans-serif;
+          "
+        >
+          <h2
+            class="section-title"
+            style="text-align: center; color: #0a3d2e; margin-bottom: 6px"
+          >
+            🌤 Dự Báo Thời Tiết
+          </h2>
+          <p
+            style="
+              text-align: center;
+              color: #666;
+              font-size: 14px;
+              margin-bottom: 20px;
+            "
+          >
+            Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
+          </p>
+
+          <div
+            style="position: relative; max-width: 440px; margin: 0 auto 22px"
+          >
+            <span
+              style="
+                position: absolute;
+                left: 14px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 17px;
+                pointer-events: none;
+              "
+              >🔍</span
+            >
+            <input
+              type="text"
+              id="tt-input"
+              placeholder="Gõ tên xã, phường, thị trấn..."
+              oninput="ttFilter()"
+              onfocus="ttShow()"
+              autocomplete="off"
+              style="
+                width: 100%;
+                padding: 13px 14px 13px 42px;
+                font-size: 15px;
+                border-radius: 10px;
+                border: 2px solid #0a3d2e;
+                color: #333;
+                background: #fff;
+                font-family: inherit;
+                outline: none;
+                box-sizing: border-box;
+              "
+            />
+            <div
+              id="tt-drop"
+              style="
+                display: none;
+                position: absolute;
+                top: calc(100% + 4px);
+                left: 0;
+                right: 0;
+                background: #fff;
+                border: 2px solid #0a3d2e;
+                border-radius: 10px;
+                max-height: 250px;
+                overflow-y: auto;
+                z-index: 9999;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+              "
+            ></div>
+          </div>
+
+          <div
+            id="tt-box"
+            style="
+              display: none;
+              border-radius: 14px;
+              overflow: hidden;
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            "
+          >
+            <div
+              style="
+                background: #0a3d2e;
+                color: #fff;
+                padding: 12px 20px;
+                font-size: 15px;
+                font-weight: 600;
+              "
+            >
+              📍 Thời tiết: <span id="tt-name"></span>
+            </div>
+            <div id="tt-widget-wrap" style="background: #fff"></div>
+            <div
+              id="tt-noembed"
+              style="
+                display: none;
+                padding: 24px;
+                text-align: center;
+                background: #fff;
+              "
+            >
+              <p style="color: #888; font-size: 14px">
+                ⚙️ Khu vực này chưa có dữ liệu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var TT_AREAS = [
+            {
+              name: "Huyện Cô Tô",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/co-to?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Vân Đồn",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/van-don?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Ba Chẽ",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/ba-che?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Hải Hà",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/hai-ha?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Tiên Yên",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/tien-yen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Đầm Hà",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/dam-ha?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Bình Liêu",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/binh-lieu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "thị xã Quảng Yên",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/quang-yen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Đông Triều ",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/dong-trieu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Uông Bí",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/uong-bi?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Cẩm Phả",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/cam-pha?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Móng Cái",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/mong-cai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Hạ Long",
+              parent: "Tỉnh Quảng Ninh cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/quang-ninh/ha-long?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            ,
+          ];
+          function ttNorm(s) {
+            return s
+              .toLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .replace(/đ/g, "d");
+          }
+
+          var ttFiltered = TT_AREAS.slice();
+
+          function ttFilter() {
+            var q = ttNorm(document.getElementById("tt-input").value.trim());
+            ttFiltered = q
+              ? TT_AREAS.filter(function (a) {
+                  return ttNorm(a.name).indexOf(q) !== -1;
+                })
+              : TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttShow() {
+            ttFiltered = TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttRender() {
+            var dd = document.getElementById("tt-drop");
+            if (!ttFiltered.length) {
+              dd.innerHTML =
+                '<div style="padding:14px 18px;color:#999;font-size:14px;">Không tìm thấy</div>';
+              return;
+            }
+            dd.innerHTML = ttFiltered
+              .map(function (a) {
+                var idx = TT_AREAS.indexOf(a);
+                var dot = a.widget.trim()
+                  ? '<span style="color:#27ae60;font-size:10px;margin-left:6px;" title="Đã có widget">●</span>'
+                  : '<span style="color:#ccc;font-size:10px;margin-left:6px;" title="Chưa có widget">●</span>';
+                return (
+                  '<div onclick="ttSelect(' +
+                  idx +
+                  ')"' +
+                  ' style="padding:11px 18px;font-size:14px;cursor:pointer;' +
+                  'border-bottom:1px solid #f5f5f5;display:flex;align-items:center;"' +
+                  " onmouseover=\"this.style.background='#f0f7f4'\"" +
+                  " onmouseout=\"this.style.background='#fff'\">" +
+                  '<span style="color:#0a3d2e;font-weight:600;">' +
+                  a.name +
+                  "</span>" +
+                  dot +
+                  "</div>"
+                );
+              })
+              .join("");
+          }
+
+          function ttSelect(idx) {
+            var a = TT_AREAS[idx];
+            document.getElementById("tt-input").value = a.name;
+            document.getElementById("tt-drop").style.display = "none";
+            var locationTitle = a.name;
+            if (a.parent) {
+              locationTitle += " (" + a.parent + ")";
+            }
+
+            document.getElementById("tt-name").textContent = locationTitle;
+            document.getElementById("tt-box").style.display = "block";
+
+            var wrap = document.getElementById("tt-widget-wrap");
+            var noEmbed = document.getElementById("tt-noembed");
+
+            if (a.widget && a.widget.trim()) {
+              wrap.innerHTML = a.widget;
+              wrap.style.display = "block";
+              noEmbed.style.display = "none";
+            } else {
+              wrap.innerHTML = "";
+              wrap.style.display = "none";
+              noEmbed.style.display = "block";
+            }
+
+            document
+              .getElementById("tt-box")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+
+          document.addEventListener("click", function (e) {
+            var inp = document.getElementById("tt-input");
+            var drop = document.getElementById("tt-drop");
+            if (drop && e.target !== inp && !drop.contains(e.target))
+              drop.style.display = "none";
+          });
+        </script>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="contact">
+        <h1 class="w3-center" style="font-size: 50px">DÂN CƯ</h1>
+        <article>
+          <figure style="overflow-x: auto">
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #999;
+              "
+            >
+              <tr style="background: #f0f0f0">
+                <th>Năm</th>
+                <th>Dân số</th>
+                <th>±%</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>1995</td>
+                  <td>941,700</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>1996</td>
+                  <td>958,000</td>
+                  <td>+1.74%</td>
+                </tr>
+                <tr>
+                  <td>1997</td>
+                  <td>974,400</td>
+                  <td>+1.70%</td>
+                </tr>
+                <tr>
+                  <td>1998</td>
+                  <td>991,400</td>
+                  <td>+1.73%</td>
+                </tr>
+                <tr>
+                  <td>1999</td>
+                  <td>1,007,200</td>
+                  <td>+1.61%</td>
+                </tr>
+                <tr>
+                  <td>2000</td>
+                  <td>1,024,200</td>
+                  <td>+1.70%</td>
+                </tr>
+                <tr>
+                  <td>2001</td>
+                  <td>1,039,300</td>
+                  <td>+1.48%</td>
+                </tr>
+                <tr>
+                  <td>2002</td>
+                  <td>1,054,400</td>
+                  <td>+1.46%</td>
+                </tr>
+                <tr>
+                  <td>2003</td>
+                  <td>1,068,400</td>
+                  <td>+1.33%</td>
+                </tr>
+                <tr>
+                  <td>2004</td>
+                  <td>1,081,800</td>
+                  <td>+1.24%</td>
+                </tr>
+                <tr>
+                  <td>2005</td>
+                  <td>1,096,100</td>
+                  <td>+1.31%</td>
+                </tr>
+                <tr>
+                  <td>2006</td>
+                  <td>1,109,300</td>
+                  <td>+1.21%</td>
+                </tr>
+                <tr>
+                  <td>2007</td>
+                  <td>1,122,500</td>
+                  <td>+1.19%</td>
+                </tr>
+                <tr>
+                  <td>2008</td>
+                  <td>1,135,100</td>
+                  <td>+1.14%</td>
+                </tr>
+                <tr>
+                  <td>2009</td>
+                  <td>1,146,100</td>
+                  <td>+0.97%</td>
+                </tr>
+                <tr>
+                  <td>2010</td>
+                  <td>1,154,900</td>
+                  <td>+0.77%</td>
+                </tr>
+                <tr>
+                  <td>2011</td>
+                  <td>1,163,700</td>
+                  <td>+0.76%</td>
+                </tr>
+                <tr>
+                  <td>2012</td>
+                  <td>1,198,400</td>
+                  <td>+2.98%</td>
+                </tr>
+                <tr>
+                  <td>2013</td>
+                  <td>1,202,900</td>
+                  <td>+0.38%</td>
+                </tr>
+                <tr>
+                  <td>2014</td>
+                  <td>1,218,900</td>
+                  <td>+1.33%</td>
+                </tr>
+                <tr>
+                  <td>2015</td>
+                  <td>1,235,500</td>
+                  <td>+1.36%</td>
+                </tr>
+                <tr>
+                  <td>2016</td>
+                  <td>1,242,000</td>
+                  <td>+0.53%</td>
+                </tr>
+                <tr>
+                  <td>2017</td>
+                  <td>1,258,100</td>
+                  <td>+1.29%</td>
+                </tr>
+                <tr>
+                  <td>2018</td>
+                  <td>1,266,500</td>
+                  <td>+0.67%</td>
+                </tr>
+                <tr>
+                  <td>2019</td>
+                  <td>1,324,800</td>
+                  <td>+4.56%</td>
+                </tr>
+                <tr>
+                  <td>2020</td>
+                  <td>1,338,000</td>
+                  <td>+1.00%</td>
+                </tr>
+                <tr>
+                  <td>2021</td>
+                  <td>1,350,900</td>
+                  <td>+0.97%</td>
+                </tr>
+                <tr>
+                  <td>2022</td>
+                  <td>1,362,900</td>
+                  <td>+0.89%</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>1,413,452</td>
+                  <td>+3.66%</td>
+                </tr>
+              </tbody>
+            </table>
+            <figcaption>
+              <p>
+                <strong><mark>Dân số tỉnh Quảng Ninh năm 2019:</mark></strong>
+                Năm 2019, dân số tỉnh Quảng Ninh đạt <u>1.324.800 người</u>, với
+                diện tích <u>6178,2 km²</u> thì mật độ dân số là
+                <u>214 người/km²</u>. Trong đó dân số sống tại thành thị là
+                <u>853.700 người</u>, chiếm <u>64,4%</u> dân số toàn tỉnh.
+              </p>
+
+              <p>
+                <strong><mark>Đô thị hóa và giới tính:</mark></strong> Quảng
+                Ninh hiện là một trong số các địa phương có mức độ đô thị hóa
+                cao nhất Việt Nam, vượt xa cả thủ đô Hà Nội. Tại Quảng Ninh, dân
+                số nam đông hơn dân số nữ, với tỷ số giới tính
+                <u>103,5 nam trên mỗi 100 nữ</u>, cao nhất trong vùng đồng bằng
+                sông Hồng.
+              </p>
+
+              <p style="font-size: 15px">
+                (Nguồn thông tin:
+                <a
+                  href="https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Ninh"
+                  target="_blank"
+                  >Wikipedia – Quảng Ninh</a
+                >)
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="VANHOA">
+        <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
+        <article>
+          <h2 style="font-size: 40px">
+            <strong><mark>VĂN HOÁ:</mark></strong>
+          </h2>
+          <p>
+            Văn hóa Quảng Ninh là sự hòa quyện giữa di sản thiên nhiên kỳ vĩ,
+            truyền thống biển đảo và các lễ hội sôi động, phản ánh đời sống gắn
+            bó lâu đời của người dân với biển cả.
+          </p>
+
+          <h2 style="font-size: 40px">
+            <strong><mark>LỄ HỘI:</mark></strong>
+          </h2>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              <strong>-Các lễ hội tiêu biểu của tỉnh Quảng Ninh:</strong>
+            </summary>
+            <ol type="1">
+              <li>
+                <mark><strong> Lễ hội Yên Tử</strong></mark>
+                <p>
+                  Thời gian: <u>từ ngày 10 tháng Giêng – hết tháng 3 Âm lịch</u>
+                </p>
+                <p>Địa điểm: <u>núi Yên Tử, phường Yên Tử</u></p>
+                <p>
+                  Nhắc đến lễ hội ở Quảng Ninh, nhiều du khách sẽ nghĩ ngay tới
+                  lễ hội Yên Tử. Yên Tử là trung tâm Phật giáo của nước Đại Việt
+                  thuở xưa, đồng thời là nơi phát tích của thiền phái Trúc Lâm.
+                  Khi đi du lịch Yên Tử dịp đầu năm, bạn có thể tách mình khỏi
+                  thế giới trần tục và thực hiện cuộc hành hương tôn giáo giữa
+                  thiên nhiên trong lành, hùng vĩ. Bên cạnh đó, du khách còn có
+                  cơ hội chứng kiến, tham gia nhiều hoạt động hấp dẫn như lễ
+                  khai ấn “Dấu thiêng Chùa Đồng”, lễ dâng hương cúng Phật, lễ
+                  bái Tổ Trúc Lâm… Các hoạt động văn hoá tâm linh độc đáo, mang
+                  tính truyền thống tại chùa Yên Tử dịp lễ hội chắc chắn sẽ làm
+                  du khách cảm thấy thoải mái và vui vẻ hơn.
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/le-hoi-o-quang-ninh-2.jpeg"
+                    class="w3-container"
+                    alt="Lễ hội Yên Tử"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/top-12-le-hoi-o-quang-ninh/"
+                      target="_blank"
+                      >vinwonders.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội đền Cửa Ông ở Quảng Ninh</strong></mark>
+                <p>
+                  Thời gian:
+                  <u>từ mùng 3, 4 tháng Giêng và mùng 3, 4 tháng 8 Âm lịch</u>
+                </p>
+                <p>Địa điểm: <u>đền Cửa Ông, phường Cửa Ông</u></p>
+                <p>
+                  Đền Cửa Ông là nơi thờ Trần Quốc Tảng – người con thứ 3 của
+                  Trần Hưng Đạo cùng nhiều vị tướng nhà Trần khác đã có công
+                  đánh đuổi giặc ngoại xâm và trấn ải vùng Đông Bắc. Bên cạnh
+                  đó, địa điểm này còn thờ Hoàng Cầu – vị tướng lĩnh người địa
+                  phương đã có nhiều công lớn trong việc dẹp giặc, bảo vệ bình
+                  yên cho dân làng. Lễ hội đền Cửa Ông được tổ chức nhằm tưởng
+                  nhớ công ơn của tướng Trần Quốc Tảng và các vị tướng lĩnh.
+                </p>
+                <p>
+                  Lễ hội được tổ chức linh đình, bao gồm 2 phần: tế lễ và rước
+                  kiệu bài vị của tướng Trần Quốc Tảng. Vào mùa lễ hội, đền Cửa
+                  Ông thu hút rất nhiều du khách từ khắp nơi đổ về. Vì vậy, bạn
+                  có thể du lịch Cẩm Phả dịp đầu năm và kết hợp tham quan đền
+                  Cửa Ông để có cơ hội tham gia nhiều hoạt động thú vị tại đây.
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/le-hoi-o-quang-ninh-3-1536x864.jpeg"
+                    class="w3-container"
+                    alt="Lễ hội đền Cửa Ông"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/top-12-le-hoi-o-quang-ninh/"
+                      target="_blank"
+                      >vinwonders.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội Carnaval Hạ Long</strong></mark>
+                <p>Thời gian: <u>hàng năm vào dịp lễ 30/4 – 1/5</u></p>
+                <p>Địa điểm: <u>phường Bãi Cháy, Quảng Ninh</u></p>
+                <p>
+                  Lễ hội Carnaval Hạ Long được tổ chức lần đầu tiên vào năm
+                  2007. Tính đến nay, lễ hội ở Quảng Ninh này đã trải qua 15 mùa
+                  lễ hội. Đây là hành trình rực rỡ sắc màu, hội tụ tinh hoa bản
+                  sắc văn hoá địa phương. Chương trình Carnaval Hạ Long có 4
+                  phần bao gồm: khai mạc, chương trình nghệ thuật sân khấu, vũ
+                  hội đường phố và bắn pháo hoa.
+                </p>
+                <p>
+                  Lễ hội ở Quảng Ninh này đóng vai trò quan trọng trong việc lan
+                  tỏa hình ảnh một Hạ Long mến khách, thân thiện; một Quảng Ninh
+                  giàu truyền thống đang không ngừng đổi mới, vươn lên và hội
+                  nhập. Nếu đang lên kế hoạch du lịch Hạ Long, bạn có thể cân
+                  nhắc đi vào khoảng thời gian diễn ra lễ hội Carnaval để được
+                  hòa mình vào không khí rộn ràng, sôi động này.
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/le-hoi-o-quang-ninh-4.jpeg"
+                    class="w3-container"
+                    alt="Lễ hội Carnaval Hạ Long"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/top-12-le-hoi-o-quang-ninh/"
+                      target="_blank"
+                      >vinwonders.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội đình Trà Cổ</strong></mark>
+                <p>Thời gian: <u>từ 30/5 – 6/6 Âm lịch hàng năm</u></p>
+                <p>Địa điểm: <u>phường Móng Cái 1</u></p>
+                <p>
+                  Cách đây gần 600 năm, đình làng Trà Cổ được xây dựng để thờ
+                  cúng Thành Hoàng làng. Hằng năm, người dân thường tổ chức lễ
+                  hội đình Trà Cổ nhằm tưởng nhớ công ơn của Thành hoàng làng và
+                  cầu mong những điều tốt đẹp đến với dân làng. Ngày 25/5, đoàn
+                  thuyền rước đi từ Trà Cổ về quê tổ Đồ Sơn. Đến ngày 30/5,
+                  thuyền quay về Trà Cổ.
+                </p>
+                <p>
+                  Ngày 1/6 bắt đầu lễ hội với lễ rước Vua ra bể hay còn gọi là
+                  rước Vua ra miếu. Sau đó, người dân tổ chức các cuộc thi sản
+                  phẩm chăn nuôi trồng trọt, trong đó chủ yếu là những chú lợn
+                  mà người dân gọi là Ông Voi. Bên cạnh đó, du lịch Trà Cổ vào
+                  dịp lễ hội, bạn còn có thể chứng kiến nét độc đáo của hội thi
+                  nấu ăn, thi làm cỗ…
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/le-hoi-o-quang-ninh-5.jpeg"
+                    class="w3-container"
+                    alt="Lễ hội đình Trà Cổ"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/top-12-le-hoi-o-quang-ninh/"
+                      target="_blank"
+                      >vinwonders.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội chùa Long Tiên</strong></mark>
+                <p>Thời gian: <u>ngày 24/3 Âm lịch hàng năm</u></p>
+                <p>
+                  Địa điểm: <u>chùa Long Tiên ngay dưới chân núi Bài Thơ</u>
+                </p>
+                <p>
+                  Tuy được xây dựng cách đây không lâu (1941) nhưng chùa Long
+                  Tiên dưới chân núi Bài Thơ là ngôi chùa lớn nhất ở thành phố
+                  Hạ Long. Lễ hội chùa Long Tiên có ý nghĩa tâm linh sâu sắc với
+                  tất cả mọi người, đặc biệt là những tín đồ đạo Phật. Tương tự
+                  các lễ hội truyền thống khác, lễ hội ở Quảng Ninh này cũng có
+                  2 phần: phần lễ và phần hội. Tuy nhiên, điểm đặc biệt là các
+                  sự kiện được tổ chức liên tục, xuyên suốt từ chùa Long Tiên –
+                  đền Đức Ông – đền thờ An Dương Vương – Loong Toòng. Khi tham
+                  gia lễ hội Long Tiên, du khách sẽ được hòa mình vào không gian
+                  sôi động, rộn ràng; chứng kiến các hoạt động văn hoá độc đáo
+                  và hiểu hơn về cuộc sống sinh hoạt văn hoá của người dân nơi
+                  đây.
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/le-hoi-o-quang-ninh-6.jpeg"
+                    class="w3-container"
+                    alt="Lễ hội chùa Long Tiên"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/top-12-le-hoi-o-quang-ninh/"
+                      target="_blank"
+                      >vinwonders.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội đình Quan Lạn</strong></mark>
+                <p>
+                  Thời gian:
+                  <u
+                    >lễ hội chính tổ chức ngày 18/6 Âm lịch nhưng thường kéo dài
+                    từ ngày 10/6 – 19/6</u
+                  >
+                </p>
+                <p>Địa điểm: <u>bến Đình, đặc khu Vân Đồn</u></p>
+                <p>
+                  Khi du lịch đảo Quan Lạn Quảng Ninh thuộc địa phận huyện Vân
+                  Đồn vào tháng 6 Âm lịch, du khách có thể tham gia lễ hội đình
+                  Quan Lạn. Lễ hội ở Quảng Ninh này thể hiện tinh thần thượng võ
+                  của dân tộc trong thời kỳ chống quân Nguyên Mông. Vào những
+                  ngày này, không khí tại bến Đình rất sôi động và tưng bừng, ai
+                  ai cũng phấn khởi, vui tươi. Đến đây, bạn có thể chiêm ngưỡng
+                  màn đua thuyền rồng náo nhiệt, tìm hiểu văn hoá truyền thống
+                  lâu đời…
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/le-hoi-o-quang-ninh-7.jpeg"
+                    class="w3-container"
+                    alt="Lễ hội đình Quan Lạn"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/top-12-le-hoi-o-quang-ninh/"
+                      target="_blank"
+                      >vinwonders.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội Thập Cửu Tiên Công</strong></mark>
+                <p>Thời gian: <u>ngày 5 – 8 tháng Giêng Âm lịch</u></p>
+                <p>Địa điểm: <u>đền Thập Cửu Tiên Công, phường Phong Cốc</u></p>
+                <p>
+                  Một trong những lễ hội ở Quảng Ninh mà du khách không nên bỏ
+                  qua chính là lễ hội Thập Cửu Tiên Công. Lễ hội này được tổ
+                  chức nhằm tưởng nhớ công ơn của 19 vị Tiên Công – những người
+                  có công đầu tiên quai đê lấn biển lập nên đảo Hà Nam đông vui,
+                  trù phú như ngày nay. Ngày mùng 7 tháng Giêng hằng năm, các cụ
+                  thượng thọ từ 70 tuổi cùng con cháu ra đền lễ Tiên Công. Trong
+                  đó, các cháu đội mâm lễ vật đi trước, các cụ theo sau. Lễ tế
+                  kết thúc, lễ động thổ sẽ diễn ra. Sau khi hoàn thành phần lễ,
+                  dân làng bắt đầu tổ chức các trò chơi thú vị như chọi gà, chọi
+                  trâu, đánh cờ người, hát chèo…
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/le-hoi-o-quang-ninh-8.jpeg"
+                    class="w3-container"
+                    alt="Lễ hội Thập Cửu Tiên Công"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/top-12-le-hoi-o-quang-ninh/"
+                      target="_blank"
+                      >vinwonders.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội đền An Sinh</strong></mark>
+                <p>Thời gian: <u>ngày 20/8 Âm lịch</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >khu di tích Quốc gia đặc biệt Nhà Trần, phường Đông
+                    Triều</u
+                  >
+                </p>
+                <p>
+                  Lễ hội ở Quảng Ninh này được tổ chức vào ngày giỗ chính của
+                  Hưng Đạo Đại Vương Trần Quốc Tuấn. Phần lễ của lễ hội đền An
+                  Sinh có lễ gióng trống, chiêng khai hội; lễ dâng hương tưởng
+                  niệm các vua Trần và cầu quốc thái dân an; dâng hương tại lăng
+                  mộ các vua Trần. Phần hội có nhiều hoạt động thú vị như thi
+                  kéo co, liên hoan văn nghệ, trò chơi dân gian… Bên cạnh đó, lễ
+                  hội ở Quảng Ninh này còn có một số triển lãm như triển lãm
+                  trưng bày cây cảnh bonsai nghệ thuật, triển lãm ảnh về Đông
+                  Triều…
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/le-hoi-o-quang-ninh-9.jpeg"
+                    class="w3-container"
+                    alt="Lễ hội đền An Sinh"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/top-12-le-hoi-o-quang-ninh/"
+                      target="_blank"
+                      >vinwonders.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark
+                  ><strong>
+                    Lễ hội Bàn Vương của người Dao Quảng Ninh</strong
+                  ></mark
+                >
+                <p>Thời gian: <u>ngày 27/12</u></p>
+                <p>
+                  Địa điểm:
+                  <u>nhà sinh hoạt văn hoá cộng đồng dân tộc Dao, xã Ba Chẽ</u>
+                </p>
+                <p>
+                  Đây là lễ hội có ý nghĩa vô cùng đặc biệt với người Dao ở Việt
+                  Nam nói chung và người Dao ở Ba Chẽ nói riêng. Lễ hội Bàn
+                  Vương là dịp để người dân tưởng nhớ công ơn của ông tổ đã sinh
+                  ra người Dao và phù trợ cho 12 dòng họ vượt biển đến vùng đất
+                  mới. Bên cạnh đó, lễ hội còn là sợi dây gắn kết cộng đồng,
+                  làng bản và dòng họ.
+                </p>
+                <p>
+                  Thông qua các hoạt động đặc sắc, lễ hội Bàn Vương đã tái hiện
+                  lại một số nghi lễ đặc trưng như hành trình vượt biển của 12
+                  dòng họ người Dao. Không chỉ vậy, du khách còn có cơ hội chứng
+                  kiến một số nghi lễ đặc biệt như cúng ông tổ Bàn Vương tại
+                  miếu Bàn Vương; cầu nguyện hoa màu tươi tốt, mưa thuận gió
+                  hoà; biểu diễn dân ca, dân vũ… trong lễ hội ở Quảng Ninh này.
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/le-hoi-o-quang-ninh-10.jpeg"
+                    class="w3-container"
+                    alt="Lễ hội Bàn Vương"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/top-12-le-hoi-o-quang-ninh/"
+                      target="_blank"
+                      >vinwonders.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội Bạch Đằng</strong></mark>
+                <p>Thời gian: <u>tháng 3 Âm lịch</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >khu di tích lịch sử quốc gia đặc biệt Bạch Đằng, phường
+                    Quảng Yên</u
+                  >
+                </p>
+                <p>
+                  Với người dân đất mỏ, lễ hội Bạch Đằng là sự kiện văn hoá và
+                  du lịch có ý nghĩa vô cùng quan trọng. Đây là dịp để người dân
+                  bày tỏ lòng tri ân trước những cống hiến của các bậc anh hùng
+                  đã hy sinh để bảo vệ độc lập dân tộc. Thông qua đó, lễ hội ở
+                  Quảng Ninh này góp phần khẳng định ý nghĩa, giá trị lịch sử
+                  của chiến thắng Bạch Đằng. Sau phần nghi lễ, dâng hương tưởng
+                  niệm, người dân sẽ thực hiện lễ rước tượng Đức Thánh Trần Hưng
+                  Đạo.
+                </p>
+                <figure>
+                  <img
+                    src="https://static.vinwonders.com/production/le-hoi-o-quang-ninh-11.jpeg"
+                    class="w3-container"
+                    alt="Lễ hội Bạch Đằng"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://vinwonders.com/vi/wonderpedia/news/top-12-le-hoi-o-quang-ninh/"
+                      target="_blank"
+                      >vinwonders.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="DITICH">
+        <h1 class="w3-center" style="font-size: 50px">
+          DI TÍCH, DI SẢN VĂN HOÁ
+        </h1>
+        <article>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Một số di tích lịch sử:
+            </summary>
+            <ol type="1">
+              <li>
+                Chùa Lái (còn gọi là Linh Ngai Tự)<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/mHjGDGNvoub4s5Py6"
+                  target="_blank"
+                  >VRJ5+GX7, Liên Vị, Quảng Yên, Quảng Ninh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/0f18b25d-de84-401a-835a-8c1ba94a10ca-chua-laijpg.jpg"
+                    class="w3-container"
+                    alt="Chùa Lái"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Chùa Yên Mỹ - Phúc Khánh Tự<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/TaSnQ2ejXpEF6yrM9"
+                  target="_blank"
+                  >22HF+372, Lê Lợi, Hoành Bồ, Quảng Ninh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/f8945387-db9d-4f81-90b3-cc7e8cac3d84-chua-yen-myjpg.jpg"
+                    class="w3-container"
+                    alt="Chùa Yên Mỹ - Phúc Khánh Tự"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Chùa Nhuệ Hổ ( Chùa Quảng Phúc)<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/z4fpkvjZYKohet3Z8"
+                  target="_blank"
+                  >3H92+7J5, Kim Sơn, Đông Triều, Quảng Ninh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/e4a5da01-8b8d-45b9-8979-165f2d2c69e3-chua-nhue-hojpg.jpg"
+                    class="w3-container"
+                    alt="Chùa Nhuệ Hổ"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đình Bình Lục<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/isAHuzMGZZxMJ38Z8"
+                  target="_blank"
+                  >3FJX+4PP, Thôn, Bình Lục Hạ, Đông Triều, Quảng Ninh,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/b786eaa1-1289-4b59-8cb7-6f1c43e9bac0-dinh-binh-lucjpg.jpg"
+                    class="w3-container"
+                    alt="Đình Bình Lục"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đình Phong Cốc<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/2mUoyJiqMZogB6cX6"
+                  target="_blank"
+                  >VRX6+HM8, Đảo Hà Nam, Huyện, Quảng Yên, Quảng Ninh,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/021836ef-a7a8-4bd3-ab5c-78e5e604e6d9-dinh-phong-cocjpg.jpg"
+                    class="w3-container"
+                    alt="Đình Phong Cốc"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đình Hải Yến<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/ZTzqAZ6q9LiG2H9f7"
+                  target="_blank"
+                  >WQ4X+Q96, Yên Hải, Quảng Yên, Quảng Ninh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/689de3dc-f733-47c7-b85f-d3fb23e535ca-dinh-hai-yenjpg.jpg"
+                    class="w3-container"
+                    alt="Đình Hải Yến"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Khu di tích lịch sử Pò Hèn<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/pT98frCjwJEomU4R8"
+                  target="_blank"
+                  >JQQ6+426, Hải Sơn, Móng Cái, Quảng Ninh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - cách mạng <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/a77dd39c-6447-4717-8cca-1e819bbd074e-di-tich-lich-su-po-henjpg.jpg"
+                    class="w3-container"
+                    alt="Khu di tích lịch sử Pò Hèn"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Chùa Nam Thọ (Vạn Linh Khánh Tự)<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/pKKc9K12rt6bNfFj8"
+                  target="_blank"
+                  >F2G7+P5R, Tràng Vĩ, Móng Cái, Quảng Ninh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/27bda60f-0bf3-4729-a3ce-9734fbf6e12d-chua-nam-thojpg.jpg"
+                    class="w3-container"
+                    alt="Chùa Nam Thọ"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Di tích thương cảng Vân Đồn<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/Tx69XZ1HA2Nug9jP6"
+                  target="_blank"
+                  >VGX2+57, Quan Lạn, Vân Đồn, Quảng Ninh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/a6527207-b67d-4145-bde0-8a7c1c8fd803-di-tich-thuong-cang-van-donjpg.jpg"
+                    class="w3-container"
+                    alt="Di tích thương cảng Vân Đồn"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Khu lưu niệm Chủ tịch Hồ Chí Minh trên đảo Cô Tô<br />-Địa
+                điểm:<a
+                  href="https://maps.app.goo.gl/nYRmZuMFGSieLYLD8"
+                  target="_blank"
+                  >XQF7+67X, Nguyễn Trãi, TT. Cô Tô, Cô Tô, Quảng Ninh,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - cách mạng <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/af25bfc6-6b02-477c-85b5-c914bb8ab8ab-khu-luu-niem-chu-tich-ho-chi-minh-tren-dao-co-tojpg.jpg"
+                    class="w3-container"
+                    alt="Khu lưu niệm Chủ tịch Hồ Chí Minh trên đảo Cô Tô"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Khu Di tích Nhà Trần tại Đông Triều<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/65WB7bS6FpBfK21S8"
+                  target="_blank"
+                  >5H66+54P, Ngọa Vân, Đông Triều, Quảng Ninh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - văn hoá <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/447cae48-1708-4548-b7b9-db0ee3f59684-di-tich-nha-tran-tai-dong-trieujpg.jpg"
+                    class="w3-container"
+                    alt="Khu Di tích Nhà Trần tại Đông Triều"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Vịnh Hạ Long<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/d2KKNgLdj2LviHrG6"
+                  target="_blank"
+                  >Quảng Ninh</a
+                >
+                <br />-Loại di tích:Di tích Thiên nhiên <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/debc7059-0227-410f-94a1-8e8c8eeb1e56-vinh-ha-longjpg.jpg"
+                    class="w3-container"
+                    alt="Vịnh Hạ Long"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Núi Bài Thơ<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/zdWmGhXYqLyad1c77"
+                  target="_blank"
+                  >Hạ Long, Quảng Ninh, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử - Thiên nhiên <br />
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/6f02f9eb-2e37-43a0-8b69-284b2f2f672b-nui-bai-thojpg.jpg"
+                    class="w3-container"
+                    alt="Núi Bài Thơ"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/quang-ninh/check-in-27-di-tich-lich-su-o-quang-ninh-noi-tieng-thu-hut-du-khach-tham-quan"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Ngoài ra còn có các di sản văn hoá phi vật thể như:
+            </summary>
+            <ol type="1">
+              <li>
+                -Hát nhà tơ (hát cửa đình)<br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.3m7dGP80Q7NgEEirZ6A_DgHaE3?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Hát nhà tơ (hát cửa đình)"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dantocphattrien.vietnamnet.vn/hat-nha-to-hat-mua-cua-dinh-loai-hinh-nghe-thuat-doc-dao-tren-dat-van-ninh-1600184106184.htm"
+                      target="_blank"
+                      >dantocphattrien.vietnamnet.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Hát soóng cọ của người Sán Chỉ<br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://photo-baomoi.bmcdn.me/w700_r1/2023_12_10_293_47771756/f8a0708f71c3989dc1d2.jpg"
+                    class="w3-container"
+                    alt="Hát soóng cọ của người Sán Chỉ"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://baomoi.com/hat-soong-co-net-van-hoa-cua-nguoi-dan-toc-san-chi-o-quang-ninh-c47771756.epi"
+                      target="_blank"
+                      >baomoi.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Hát soọng cô của người Sán Dìu<br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure>
+                  <img
+                    src="https://dantoc.vietnamtourism.gov.vn/wp-content/uploads/2024/12/0912.hat-soong-co-1.jpg"
+                    class="w3-container"
+                    alt="Hát soọng cô của người Sán Dìu"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dantoc.vietnamtourism.gov.vn/quang-ninh-soong-co-net-van-hoa-dac-sac-cua-nguoi-san-diu/"
+                      target="_blank"
+                      >dantoc.vietnamtourism.gov.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội Bạch Đằng<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/R.1503cfb3b4b0bcdc6bb5cdfe7bdc4147?rik=aokBIoH6VvBUxQ&riu=http%3a%2f%2fmedia.xanhx.vn%2fstorage%2fnewsportal%2f2021%2f11%2f23%2f14990%2fLe-Hoi-Bach-Dang.jpg&ehk=n2cWk2C5PPexxO05GsCOwZvybqzgs3LIMWlv5ipub5Q%3d&risl=&pid=ImgRaw&r=0"
+                    class="w3-container"
+                    alt="Lễ hội Bạch Đằng"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="http://xanhx.vn/du-lich-az/le-hoi-bach-dang-la-di-san-van-hoa-phi-vat-the-quoc-gia-14990.html"
+                      target="_blank"
+                      >xanhx.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đua thuyền trên sông Nhật Lệ<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://images2.thanhnien.vn/Uploaded/cuongtb/2022_04_30/bbc-7710-4625.jpg"
+                    class="w3-container"
+                    alt="Lễ hội đua thuyền trên sông Nhật Lệ"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://thanhnien.vn/dua-thuyen-tren-song-nhat-le-di-san-van-hoa-phi-vat-the-quoc-gia-moi-1851454023.htm"
+                      target="_blank"
+                      >thanhnien.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội cầu ngư Quảng Bình<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/OIP.ZY0XNGAci_SS18B-JenmdgHaEZ?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Lễ hội cầu ngư Quảng Bình"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/le-hoi-cau-ngu-quang-binh-va-nhung-dieu-khong-phai-ai-cung-biet-6400"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đền Cửa Ông<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://media.mia.vn/uploads/blog-du-lich/le-hoi-den-cua-ong-le-hoi-tung-bung-bac-nhat-tinh-quang-ninh-15-1641955754.jpg"
+                    class="w3-container"
+                    alt="Lễ hội đền Cửa Ông"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://mia.vn/cam-nang-du-lich/le-hoi-den-cua-ong-le-hoi-tung-bung-bac-nhat-tinh-quang-ninh-3391"
+                      target="_blank"
+                      >mia.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đình Đầm Hà<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2024/2/25/le-ruoc-than-o-dinh-dam-ha-17088604615301679074170.jpg"
+                    class="w3-container"
+                    alt="Lễ hội đình Đầm Hà"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://suckhoedoisong.vn/doc-dao-le-hoi-dinh-dam-ha-di-san-van-hoa-phi-vat-the-quoc-gia-169240225184025368.htm"
+                      target="_blank"
+                      >suckhoedoisong.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đình Quan Lạn<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/OIP.Y-vkKLtEch8nKWRtv6eHMQHaEg?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Lễ hội đình Quan Lạn"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dulichdaoquanlan.net/kham-pha-le-hoi-truyen-thong-dinh-quan-lan-n.html"
+                      target="_blank"
+                      >dulichdaoquanlan.net</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đình Trà Cổ<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://th.bing.com/th/id/OIP.HLN21zNQfCDLMYR9TXiqogHaGF?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Lễ hội đình Trà Cổ"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://thanhnien.vn/doc-dao-le-hoi-dinh-tra-co-o-ngoi-lang-bien-nam-ke-trung-quoc-1851473201.htm"
+                      target="_blank"
+                      >thanhnien.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội đình Vạn Ninh<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://bazantravel.com/cdn/medias/uploads/29/29797-le-hoi-dinh-van-ninh.JPG"
+                    class="w3-container"
+                    alt="Lễ hội đình Vạn Ninh"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://bazantravel.com/le-hoi-dinh-van-ninh-net-dep-van-hoa-cua-nguoi-dan-quang-ninh/"
+                      target="_blank"
+                      >bazantravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội Tiên Công<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.COilFqZKCmMqtvAXjDQMHQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Lễ hội Tiên Công"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://laodong.vn/photo/dac-sac-le-hoi-tien-cong-di-san-van-hoa-phi-vat-the-quoc-gia-hon-300-nam-1141960.ldo"
+                      target="_blank"
+                      >laodong.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội Xuống đồng<br />
+                - Loại hình: lễ hội truyền thống<br />
+                <figure>
+                  <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.E4ZJtu8zvggWoyZAPMJAsQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Lễ hội Xuống đồng"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://cand.com.vn/Chuyen-dong-van-hoa/Doc-dao-Le-hoi-xuong-dong-cua-dan-toc-Tay-Nung-Lang-Son-i421444/"
+                      target="_blank"
+                      >cand.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Nghi lễ Then của người Tày<br />
+                - Loại hình: Tập quán xã hội và tín ngưỡng<br />
+                <figure>
+                  <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.rCbXwzyRPlNYahFiui6-oQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Nghi lễ Then của người Tày"
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ttdn.vn/cong-tac-dan-toc-ton-giao-trong-su-nghiep-xay-dung-va-bao-ve-to-quoc/nghi-le-then-cau-an-cau-mua-cua-nguoi-tay-quang-ninh-89640"
+                      target="_blank"
+                      >ttdn.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="GIAODUC">
+        <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
+        <article>
+          <p>
+            <strong><mark>Hệ thống giáo dục</mark></strong
+            >: Trên địa bàn tỉnh hiện có <u>660 cơ sở giáo dục</u> từ mầm non
+            đến đại học, trong đó: <u>218 trường mầm non</u>,
+            <u>179 trường tiểu học</u>,
+            <u>1 trường liên cấp mầm non - tiểu học</u>,
+            <u>186 trường trung học cơ sở</u>,
+            <u>59 trường có cấp trung học phổ thông</u>,
+            <u>13 trung tâm GDNN-GDTX cấp huyện</u>,
+            <u>1 trung tâm HN-GDTX tỉnh</u>, <u>2 trường đại học</u>,
+            <u>1 phân hiệu đại học</u>. Với hệ thống trường học như vậy, nền
+            giáo dục trong địa bàn Tỉnh Quảng Ninh góp phần đạt phổ cập giáo dục
+            các cấp bậc học trong những năm tới.
+          </p>
+
+          <p>
+            <strong><mark>Kết quả giáo dục</mark></strong
+            >: Ngành giáo dục đã triển khai thực hiện tốt các nhiệm vụ chuyên
+            môn theo đúng kế hoạch, duy trì kết quả đã đạt được. Kết quả phổ cập
+            giáo dục, xóa mù chữ được duy trì, giữ vững và nâng cao chất lượng.
+            Năm 2017, toàn tỉnh có
+            <u>100% đơn vị cấp xã đạt chuẩn phổ cập giáo dục, xóa mù chữ</u>.
+            Trong đó, phổ cập giáo dục mầm non cho trẻ 5 tuổi đạt chuẩn
+            <u>100%</u>; phổ cập giáo dục tiểu học đạt chuẩn mức độ 1 là
+            <u>0,5%</u>, mức độ 2 là <u>6%</u>, mức độ 3 là <u>93,5%</u>; phổ
+            cập giáo dục THCS đạt chuẩn mức độ 1 là <u>9,7%</u>, mức độ 2 là
+            <u>31,7%</u>, mức độ 3 là <u>58,6%</u>.
+          </p>
+
+          <p>
+            <strong><mark>Trường chuẩn quốc gia</mark></strong
+            >: Tính đến ngày 15/6/2018, tỷ lệ trường chuẩn quốc gia đạt
+            <u>80,87%</u> (<u>520/643 trường</u>), trong đó: THPT có
+            <u>37 trường</u>; THCS có <u>144 trường</u>; tiểu học có
+            <u>161 trường</u>; mầm non có <u>178 trường</u>. Tỷ lệ phòng học
+            kiên cố đạt <u>91,18%</u>.
+          </p>
+
+          <p>
+            <strong><mark>Trường chuyên và thành tích học sinh</mark></strong
+            >: Quảng Ninh có <u>1 trường THPT Chuyên</u> là THPT Chuyên Hạ Long;
+            các trường có lớp chuyên khác bao gồm THPT Hòn Gai (Hạ Long) và THPT
+            Trần Phú (Móng Cái). Tỉnh có nhiều học sinh giỏi tham dự các kỳ thi
+            quốc gia và quốc tế, nổi bật là cuộc thi Đường lên đỉnh Olympia với
+            3 thí sinh từng đạt vô địch năm 12, 18 và 21 là
+            <u>Đặng Thái Hoàng</u>, <u>Nguyễn Hoàng Cường</u> và
+            <u>Nguyễn Hoàng Khánh</u>.
+          </p>
+        </article>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Ninh"
+            >wiki-Quảng Ninh</a
+          >
+          )
+        </p>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="KINHTE">
+        <br />
+        <h1 class="w3-center" style="font-size: 50px">KINH TẾ</h1>
+        <article>
+          <h2 style="text-align: left">
+            TÓM TẮT PHÁT TRIỂN KINH TẾ QUẢNG NINH
+          </h2>
+          <p>
+            <mark
+              ><strong>Quảng Ninh – Trọng điểm kinh tế và du lịch</strong></mark
+            >
+            là một đầu tàu của vùng kinh tế trọng điểm phía Bắc, đồng thời là
+            một trong bốn trung tâm du lịch lớn của Việt Nam với di sản thiên
+            nhiên thế giới <u>vịnh Hạ Long</u> đã hai lần được UNESCO công nhận
+            về giá trị thẩm mĩ và địa chất, địa mạo. Quảng Ninh hội tụ những
+            điều kiện thuận lợi cho phát triển kinh tế - xã hội quan trọng trong
+            tiến trình công nghiệp hóa, hiện đại hóa đất nước. Quảng Ninh có
+            nhiều khu kinh tế. Trung tâm thương mại <u>Móng Cái</u> là đầu mối
+            giao thương giữa hai nước Việt Nam - Trung Quốc và các nước trong
+            khu vực. Từ năm <u>2017</u> tới <u>2022</u>, Quảng Ninh là tỉnh liên
+            tục <u>6 lần</u> có chỉ số năng lực cạnh tranh cấp tỉnh PCI đứng thứ
+            1 ở Việt Nam.
+          </p>
+
+          <p>
+            <mark><strong>Tình hình kinh tế năm 2018</strong></mark
+            >: Tốc độ tăng trưởng của tỉnh đạt <u>11,1%</u>; thu nhập bình quân
+            đầu người đạt <u>5110 USD</u> (gấp hơn gần <u>2 lần</u> bình quân
+            chung cả nước); tiếp tục đứng trong nhóm <u>7</u> địa phương dẫn đầu
+            cả nước về thu ngân sách với tổng thu ước đạt trên
+            <u>40.500 tỷ đồng</u>, trong đó thu nội địa đạt
+            <u>30.500 tỷ đồng</u> đứng thứ <u>4</u> toàn quốc; thực hiện tiết
+            kiệm triệt để nguồn chi thường xuyên, tăng chi cho đầu tư phát triển
+            với tỷ trọng trên <u>64%</u> tổng chi ngân sách; tổng vốn đầu tư
+            toàn xã hội đạt trên <u>67.600 tỷ đồng</u>. Lương bình quân của lao
+            động trong tỉnh ở các ngành chủ lực như than, điện, cảng biển, cửa
+            khẩu và du lịch đều ở mức cao.
+          </p>
+        </article>
+
+        <h2 style="text-align: center">Biểu đồ GRDP Quảng Ninh 2016–2024</h2>
+        <p style="text-align: center">Đơn vị: tỷ đồng / %</p>
+        <figure
+          style="width: 80%; margin: auto"
+          class="w3-center chart-container"
+        >
+          <canvas id="grdpChartQuangNinh" class="w3-center"></canvas>
+          <figcaption>
+            <p style="font-size: 14px; text-align: center; margin-top: 5px">
+              Nguồn: Tổng cục Thống kê Việt Nam và ước tính từ số liệu GRDP của
+              tỉnh Quảng Ninh.
+            </p>
+            <p style="font-size: 15px">
+              (nguồn thông tin:
+              <a
+                href="https://vi.wikipedia.org/wiki/Qu%E1%BA%A3ng_Ninh"
+                target="_blank"
+                >wiki Quảng Ninh</a
+              >)
+            </p>
+          </figcaption>
+        </figure>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+          const ctx = document
+            .getElementById("grdpChartQuangNinh")
+            .getContext("2d");
+
+          const grdpDataQN = [
+            54000, 
+            58000, 
+            67600,
+            71500, 
+            75500, 
+            78000,
+            81000, 
+            85000, 
+            89000, 
+          ];
+
+          const growthRateQN = [
+            0.08,
+            0.09, 
+            0.111, 
+            0.067, 
+            0.056, 
+            0.032, 
+            0.038, 
+            0.049, 
+            0.047,
+          ];
+
+          new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: [
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+              ],
+              datasets: [
+                {
+                  label: "GRDP Quảng Ninh (tỷ đồng)",
+                  data: grdpDataQN,
+                  backgroundColor: "#4CAF50",
+                  yAxisID: "y",
+                },
+                {
+                  label: "Tăng trưởng GRDP (%)",
+                  data: growthRateQN.map((v) => v * 100),
+                  backgroundColor: "#FF9800",
+                  yAxisID: "y1",
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: { position: "top" },
+                title: {
+                  display: true,
+                  text: "GRDP và Tăng trưởng kinh tế Quảng Ninh (2016–2024)",
+                },
+              },
+              scales: {
+                y: {
+                  beginAtZero: false,
+                  position: "left",
+                  title: { display: true, text: "GRDP (tỷ đồng)" },
+                },
+                y1: {
+                  beginAtZero: true,
+                  position: "right",
+                  grid: { drawOnChartArea: false },
+                  title: { display: true, text: "Tăng trưởng (%)" },
+                },
+                x: { title: { display: true, text: "Năm" } },
+              },
+            },
+          });
+        </script>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="AMTHUC">
+        <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
+        <h2>-Quảng Ninh có rất nhiều đặc sản nổi tiếng có thể kể đến như:</h2>
+        <ol type="1">
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Chả mực Hạ Long
+              </summary>
+              <p>
+                Chả mực Hạ Long là một trong những đặc sản nổi tiếng nhất của
+                Quảng Ninh, từng nằm trong top 50 món ăn đặc sắc nổi tiếng Việt
+                Nam.
+              </p>
+              <p>
+                Được làm từ những con mực tươi ngon khi mới được đánh bắt từ
+                biển, qua các công đoạn chế biến, đặc biệt chả mực Hạ Long phải
+                giã bằng tay thì miếng chả mới có độ dai ngon, ngọt. Khi đến Hạ
+                Long bạn nhất định đừng bỏ qua đặc sản này nhé.
+              </p>
+              -Giá tham khảo: Khoảng 350.000 - 450.000 đồng/kg<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/8zuEy1RNJFnHrShL6"
+                >Ki ốt 228, 230 Cạnh Chợ Hạ Long 1, P. Bạch Đằng, Hạ Long, Quảng
+                Ninh</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181502266395.jpg"
+                  class="w3-container"
+                  alt="Chả mực Hạ Long"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Sam Quảng Yên
+              </summary>
+              <p>
+                Sam là loài hải sản họ cua, có vỏ cứng và sống thành từng cặp
+                với nhau. Nếu để thưởng thức món sam biển thì không thể không
+                nhắc đến Sam Quảng Yên, một đặc sản của vùng biển Hạ Long.
+              </p>
+              <p>
+                Sam Quảng Yên to, thịt chắc , bổ dưỡng và thơm ngon, được nhiều
+                du khách ưa chuộng nhiều.
+              </p>
+              -Giá tham khảo: Khoảng 100.000 - 300.000 đồng/kg<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/qvH3WpM4oVD5LrtW9"
+                >Ng. 7D Cao Thắng, Cao Thắng, Hạ Long, Quảng Ninh 200000</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181504089025.jpg"
+                  class="w3-container"
+                  alt="Sam Quảng Yên"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh gật gù Tiên Yên
+              </summary>
+              <p>
+                Là một loại bánh độc đáo khi nghe từ tên gọi của nó, bánh được
+                làm từ gạo và khi xay gạo, bánh được cho thêm một ít cơm nguội,
+                đây là bí quyết để bánh trở nên mềm, thơm và dẻo hơn.
+              </p>
+              <p>
+                Bánh gật gù thường được ăn kèm với mắm chưng từ hành phi và mỡ
+                gà, có thể thêm một ít thịt heo để vị thêm đậm đà. Khi đến Quảng
+                Ninh, bạn hãy ghé đến Tiên Yên để thưởng thức món ăn mới lạ này
+                nhé.
+              </p>
+              -Giá tham khảo: Khoảng 15.000 - 25.000 đồng/suất<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/pu9n245NpGthw3KSA"
+                >8CJ5+P5P, Tam Thịnh, TT. Tiên Yên, Tiên Yên, Quảng Ninh,
+                Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181504444795.jpg"
+                  class="w3-container"
+                  alt="Bánh gật gù Tiên Yên"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Gà đồi Tiên Yên
+              </summary>
+              <p>
+                Gà đồi Tiên Yên là giống gà địa phương được nuôi thả rông trên
+                đồi, để chúng tự túc kiếm ăn. Chiều tối khi về vườn, chúng lại
+                có tập tính là ngủ trên các cành cây. Chính vì thế, thịt Gà đồi
+                Tiên Yên thơm ngon, thịt chắc, không hề dai.
+              </p>
+              <p>
+                Thịt Gà đồi Tiên Yên được chế biến thành nhiều món như hấp,
+                nướng, nấu cháo,... Gà Tiên Yên sau khi nấu, da có màu vàng ươm,
+                bóng bẩy béo ngậy. Khi ăn bạn sẽ thấy rất giòn ngọt.
+              </p>
+              -Giá tham khảo: Khoảng 150.000 - 250.000 đồng/kg<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/EZQ3k6xd8G16RdSA9"
+                >272G+573, Cẩm Trung, Cẩm Phả, Quảng Ninh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181505192592.jpg"
+                  class="w3-container"
+                  alt="Gà đồi Tiên Yên"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Nem chạo
+              </summary>
+              <p>
+                Nem chạo còn có tên gọi khác là nem thính, là món nem dân dã,
+                chủ yếu được làm từ da heo và thính gạo. Nguyên liệu làm nem khá
+                đơn giản: bì heo bào nhỏ, dạng sợi mỏng nhỏ trộn với đều với
+                thính được làm từ gạo rang giã nhỏ. Chỉ đơn giản vậy thôi, nhưng
+                qua những bí quyết chế biến riêng, món nem chạo đã trở nên hấp
+                dẫn và khó quên.
+              </p>
+              <p>
+                Khi ăn nem thường được kết hợp với các loại rau sống, nhất là lá
+                sung. Bọc vài miếng nem với rau răm và cuốn bánh tráng mỏng,
+                chấm với nước chấm chua ngọt, hương vị thật tuyệt trong buổi
+                chiều đông se lạnh.
+              </p>
+              -Giá tham khảo: Khoảng 100.000 - 250.000 đồng/phần<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/u1Wm4BaXryABWFkGA"
+                >Ngã 3, Quang Yen, Quảng Ninh 10000</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181506446795.jpg"
+                  class="w3-container"
+                  alt="Nem chạo"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">Ngán</summary>
+              <p>
+                Quảng Ninh nổi tiếng với những hải sản tươi ngon, nếu bỏ qua
+                ngán là một thiếu sót vô cùng lớn. Ngán có hình dáng giống con
+                nghêu, kích thước lớn hơn. Ngán có thể chế biến thành nhiều món
+                như: Ngán hấp, ngán xào bún, gỏi ngán,...
+              </p>
+              <p>
+                Ngán còn được dùng để ngâm rượu, rượu có màu hồng, khi uống sẽ
+                cảm nhận được hương thơm, mát và ngon miệng. Rượu ngán được các
+                đấng mày râu ưa chuộng giúp tăng cường sinh lực, ngoài ra phụ nữ
+                cho con bú sử dụng rượu ngán có tác dụng tăng sữa cho con.
+              </p>
+              -Giá tham khảo: Khoảng 300.000 - 500.000 đồng/kg<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/cG7QmguF8btNnXaB6"
+                >Số 28 Trần Quốc Nghiễn, Hồng Hà, Hạ Long, Quảng Ninh 200000</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181507296484.jpg"
+                  class="w3-container"
+                  alt="Ngán"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Nộm sứa Cô Tô
+              </summary>
+              <p>
+                Đến Quảng Ninh mà không thưởng thức món ăn mới lạ này thì thật
+                là thiếu xót. Sứa biển ngay sau khi được đánh bắt về sẽ được sơ
+                chế, ngâm nước muối để giữ được độ giòn. Sứa thường được chế
+                biến thành các món nộm.
+              </p>
+              <p>
+                Gỏi sứa ở Cô Tô có độ giòn của sứa, cay của ớt, độ chua vừa đủ
+                từ chanh và giấm để tạo nên món nộm sứa ngon tuyệt, nên nếu có
+                dịp đến Quảng Ninh, bạn hãy thưởng thức món nộm ngon tuyệt này
+                nhé.
+              </p>
+              -Giá tham khảo: Khoảng 25.000 - 30.000 đồng/gói 300 gram<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/exqTLXwKYGwCjAp9A"
+                >khu 2, Cô Tô District, Quảng Ninh 200000, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181509045235.jpg"
+                  class="w3-container"
+                  alt="Nộm sứa Cô Tô"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Cháo hà - Món ăn dân dã của người địa phương
+              </summary>
+              <p>
+                Con Hà có thể xa lạ với nhiều người nếu chưa đến Quảng Ninh
+                thưởng thức, con Hà khá giống với con Hàu , đều có vỏ gai góc,
+                xù xì nhưng bên trong là phần ruột trắng sữa, mềm mại.
+              </p>
+              <p>
+                Đặc biệt khi được nấu cháo thì tuyệt cú mèo, những hạt cháo nở
+                bung đều với con Hà béo, tạo nên món ăn độc đáo nơi đây.
+              </p>
+              -Giá tham khảo: Khoảng 40.000 đồng/bát<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/tZutdKwp3axHCVfB8"
+                >Các hàng quán bán cháo Hà trên đường Trần Hưng Đạo, Tp. Hạ
+                Long, Tỉnh Quảng Ninh</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181510454970.jpg"
+                  class="w3-container"
+                  alt="Cháo hà"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bún bề bề
+              </summary>
+              <p>
+                Nếu đến Quảng Ninh vào mùa thu hay đông, mà cầm trên tay bát bún
+                bề bề nóng hổi, thơm phức thì còn gì sánh bằng. Bề bề thịt chắc,
+                tươi ngon, bún trắng thơm kết hợp nước lèo được hầm từ xương.
+                Đây sẽ là món ăn mà không thực khách nào bỏ lở khi đến đây.
+              </p>
+              -Giá tham khảo: Khoảng 100.000 - 250.000 đồng/phần<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/msSSq8uG4nF9vZnf7"
+                >Thục Thoại, Hồng Hải, Hạ Long, Quảng Ninh</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181511205742.jpg"
+                  class="w3-container"
+                  alt="Bún bề bề"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh cuốn chả mực
+              </summary>
+              <p>
+                Chả mực Hạ Long là đặc sản ngon của Quảng Ninh được ăn kèm bánh
+                cuốn dai ngon tạo nên cảm giác lạ miệng cho những người sành ăn.
+                Bánh cuốn nóng hổi, chả mực dai giòn có thêm thịt băm, nấm
+                hương,...càng làm tăng thêm hương vị món ăn. Khi đến Hạ Long,
+                bạn đừng quên thưởng thức món này nhé.
+              </p>
+              -Giá tham khảo: Khoảng 30.000 - 55.000 đồng/suất<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/xoLzUXgqYXcRKdmEA"
+                >36 Đoàn Thị Điểm, P. Bạch Đằng, Hạ Long, Quảng Ninh</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181511512611.jpg"
+                  class="w3-container"
+                  alt="Bánh cuốn chả mực"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh tài lồng ệp
+              </summary>
+              <p>
+                Cũng giống như bánh gật gù, đây là một loại bánh có cái tên rất
+                độc đáo - Bánh tài lồng ệp, là món ăn truyền thống của người Sán
+                Dìu vùng núi Quảng Ninh, thường được dùng để cúng trời và đất.
+              </p>
+              <p>
+                Bánh có màu nâu của đường phèn, có vị cay của gừng kết hợp vị
+                ngọt của đường hòa quyện vào nhau tạo nên một hương vị rất riêng
+                và đặc biệt.
+              </p>
+              -Giá tham khảo: Khoảng 10.000 đồng/miếng nhỏ<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://goo.gl/maps/7Cu4k88dS7VzRyB86"
+                >Các hàng quán dọc con đường đi lên đền thờ Trần Quốc Nghiễn
+                (hay đền Cửa Ông): Trần Quốc Nghiễn, Hồng Gai, Thành phố Hạ
+                Long, Quảng Ninh, Việt Nam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181508310389.jpg"
+                  class="w3-container"
+                  alt="Bánh tài lồng ệp"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Rượu mơ Yên Tử
+              </summary>
+              <p>
+                Yên Tử không chỉ nổi tiếng với phong cảnh đẹp mà rượu mơ nơi đây
+                cũng góp phần vào sự nổi tiếng đó. Vào khoảng tháng 3 và tháng 4
+                hằng năm, là mùa mơ chín rộ, những quả mơ chín vàng đều, hương
+                thơm thoang thoảng được lựa chọn để làm rượu.
+              </p>
+              <p>
+                Rượu mơ Yên Tử có vị ngọt dịu, thơm và dễ uống, thích hợp cho
+                nhiều lứa tuổi. Rượu mơ có tác dụng giúp ăn ngon miệng, giảm lo
+                âu căng thẳng, chữa mất ngủ và giúp tăng sức đề kháng. Sẽ thật
+                tuyệt khi vừa nhâm nhi ly rượu mơ Yên Tử vừa ngắm phong cảnh, sẽ
+                là cảm giác không bao giờ quên.
+              </p>
+              -Giá tham khảo: Khoảng 200.000 - 500.000 đồng/chai<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/D7kbzCUc22dSLVgY9"
+                >Tổ 1, Yên Thanh, Quang Trung, Uông Bí, Quảng Ninh</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181509431713.jpg"
+                  class="w3-container"
+                  alt="Rượu mơ Yên Tử"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Sá sùng
+              </summary>
+              <p>
+                Sá sùng là một loại hải sản thuộc ngành giun đốt, là một trong
+                những hải sản quý hiếm. Từ thời xưa, chúng được khai thác để làm
+                cống phẩm cho vua chúa, chỉ có những người thuộc tầng lớp giàu
+                có mới sử dụng vì giá cả khá đắt.
+              </p>
+              <p>
+                Sá sùng khi được khai thác sẽ được phơi khô, sau đó chế biến
+                thành các món ăn như cháo sá sùng, sá sùng xào lá lốt,...Khi ăn,
+                chúng ta cảm nhận được độ ngon vừa giòn vừa ngọt khiến những ai
+                đã ăn không thể quên.
+              </p>
+              -Giá tham khảo: Khoảng 2.500.000 - 4.000.000 đồng/kg<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/ZqmpVN3oxyeZfsrs8"
+                >Bãi Cháy, Ha Long, Quảng Ninh, Vietnam</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181503255177.jpg"
+                  class="w3-container"
+                  alt="Sá sùng"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Ruốc lỗ
+              </summary>
+              <p>
+                Ruốc lỗ thuộc họ bạch tuộc, nhưng nó nhỏ hơn bạch tuộc khá
+                nhiều. Mùa đánh bắt thường từ tháng 7 đến tháng 10, khi chất
+                lượng ruốc lỗ tốt nhất.
+              </p>
+              <p>
+                Ruốc lỗ có thể chế biến thành nhiều món nhưng ruốc lỗ luộc lá
+                mun chấm mắm tôm là ngon nhất. Miếng thịt dai dai, giòn giòn mà
+                uống thêm chút rượu thì tuyệt cú mèo.
+              </p>
+              -Giá tham khảo: Khoảng 350.000 - 500.000 đồng/kg<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/9ctfU41k54WTDG3C7"
+                >Số 28 Trần Quốc Nghiễn, Hồng Hà, Hạ Long, Quảng Ninh 200000</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181505536829.jpg"
+                  class="w3-container"
+                  alt="Ruốc lỗ"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Măng trúc Yên Tử
+              </summary>
+              <p>
+                Măng trúc Yên Tử có hình dáng thon dài và chắc, có vị giòn, ngon
+                và ngọt, thường được chế biến thành các món ăn như măng xào, nấu
+                lẩu,..Tuy nhiên, không phải mùa nào cũng có măng trúc Yên Tử,
+                thường khi vào mùa mưa những búp măng mơn mởn sẽ bắt đầu mọc.
+              </p>
+              -Giá tham khảo: Khoảng 30.000 - 70.000 đồng/kg<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/m5TuEYDMt44r2uo28"
+                >Mua trực tiếp từ các của hàng bán măng ở Yên Tử, Quảng Ninh</a
+              ><br />
+              <figure>
+                <img
+                  src="https://cdn.tgdd.vn/Files/2021/12/18/1405170/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-202112181510132642.jpg"
+                  class="w3-container"
+                  alt="Măng trúc Yên Tử"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/tong-hop-15-dac-san-quang-ninh-lam-xieu-long-thuc-khach-1405170"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+        </ol>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="DULICH">
+        <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
+        <h2>-Quảng Ninh có những điểm du lịch nổi tiếng như:</h2>
+        <ol type="1">
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Vịnh Hạ Long
+              </summary>
+              <article class="detail-content">
+                <p>
+                  Nói đến những địa điểm tham quan hấp dẫn ở Quảng Ninh, không
+                  thể bỏ qua quần thể khu du lịch Hạ Long. Trong đó, Vịnh Hạ
+                  Long là điểm đến “bắt buộc phải check - in” của khách du lịch
+                  trong và ngoài nước.
+                </p>
+                <p>
+                  Vịnh biển này là niềm tự hào của Việt Nam, là một trong bảy kỳ
+                  quan thiên nhiên của thế giới, ôm trong mình hơn 1.900 hòn đảo
+                  đá vôi lớn nhỏ và rất nhiều hang động thần bí.
+                </p>
+                <p>
+                  Đến Vịnh Hạ Long, bạn có thể đi cáp treo hoặc thùy phi cơ để
+                  ngắm trọn vẹn danh lam thắng cảnh này từ trên cao. Nếu bạn
+                  muốn ngắm nhìn những hòn đảo đá vôi ở khoảng cách gần, bạn có
+                  thể chọn các tour du thuyền Hạ Long nhé.
+                </p>
+                <figure>
+                  <img
+                    src="https://xpscntm-asset-6aaa6adb24ad2493.s3.ap-southeast-1.amazonaws.com/3716831346493/Ha-Long-Bay-with-Cozy-Bay-Premium-5-star-Cruise---1-Day-Tour-588f3da1-4be3-4b40-9e86-edd06d5da07f.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                    class="w3-container"
+                    alt="Vịnh Hạ Long"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-quang-ninh/124656"
+                      target="_blank"
+                      >traveloka.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Sun World Hạ Long
+              </summary>
+              <article class="detail-content">
+                <p>
+                  Sun World Hạ Long là tổ hợp vui chơi, giải trí đẳng cấp quốc
+                  tế nằm tại Bãi Cháy, thành phố Hạ Long, tỉnh Quảng Ninh. Với
+                  tổng diện tích hơn 200 ha, Sun World Hạ Long được chia thành
+                  ba khu vực chính: Công viên Rồng (Dragon Park), Công viên Nước
+                  (Typhoon Water Park) và Khu giải trí Ba Đèo – nơi nổi bật với
+                  cáp treo Nữ Hoàng và vòng quay Mặt Trời khổng lồ.
+                </p>
+                <p>
+                  Công viên Rồng là thiên đường cho những tín đồ đam mê cảm giác
+                  mạnh với hàng loạt trò chơi hiện đại như tàu lượn siêu tốc,
+                  tháp rơi tự do, đu quay khổng lồ… Trong khi đó, Công viên Nước
+                  lại là nơi lý tưởng để giải nhiệt mùa hè với hàng chục máng
+                  trượt nước, hồ tạo sóng và khu vui chơi dành cho trẻ em.
+                </p>
+                <p>
+                  Đặc biệt, cáp treo Nữ Hoàng – tuyến cáp treo hai tầng độc đáo
+                  – sẽ đưa du khách qua Vịnh Cửa Lục, chiêm ngưỡng toàn cảnh Hạ
+                  Long từ trên cao trước khi đến Khu đồi huyền bí, nơi có Làng
+                  Nhật Bản và vòng quay Mặt Trời.
+                </p>
+                <figure>
+                  <img
+                    src="https://xpscntm-asset-6aaa6adb24ad2493.s3.ap-southeast-1.amazonaws.com/2000908873691/Sun-World-Ha-Long-Tickets-84caf9b9-5f23-4418-81b9-225d20debb84.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                    class="w3-container"
+                    alt="Sun World Hạ Long"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-quang-ninh/124656"
+                      target="_blank"
+                      >traveloka.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Yoko Onsen Quang Hanh
+              </summary>
+              <article class="detail-content">
+                <p>
+                  Yoko Onsen Quang Hanh là khu nghỉ dưỡng suối khoáng nóng chuẩn
+                  Nhật đầu tiên tại Việt Nam, tọa lạc tại phường Quang Hanh,
+                  thành phố Cẩm Phả, cách trung tâm thành phố Hạ Long khoảng 15
+                  km. Được vận hành bởi tập đoàn Sun Group, Yoko Onsen mang đến
+                  trải nghiệm thư giãn, chăm sóc sức khỏe theo phong cách Nhật
+                  Bản, giữa không gian thiên nhiên yên tĩnh và trong lành.
+                </p>
+                <p>
+                  Điểm nổi bật của Yoko Onsen chính là nguồn khoáng nóng tự
+                  nhiên quý hiếm, giàu khoáng chất, đặc biệt là ion natri
+                  bicarbonate – rất tốt cho tuần hoàn máu, xương khớp và làn da.
+                  Khu nghỉ dưỡng được thiết kế theo kiến trúc Nhật Bản truyền
+                  thống, gồm nhiều bể tắm khoáng ngoài trời, bể ngâm thảo dược,
+                  phòng xông hơi đá muối, hang đá lạnh và các khu trị liệu cao
+                  cấp. Du khách có thể mặc yukata, thưởng thức ẩm thực Nhật tại
+                  nhà hàng và thư giãn hoàn toàn trong không gian mang đậm chất
+                  thiền.
+                </p>
+                <p>
+                  Giá vé tham khảo: từ 900.000 – 1.500.000 VNĐ/người tùy theo
+                  gói dịch vụ.<br />Yoko Onsen Quang Hanh là lựa chọn lý tưởng
+                  cho những ai muốn tạm rời xa nhịp sống hối hả, tìm đến sự cân
+                  bằng, phục hồi sức khỏe và tái tạo năng lượng trong khung cảnh
+                  đậm chất Nhật ngay tại Việt Nam.
+                </p>
+                <figure>
+                  <img
+                    src="https://xpscntm-asset-6aaa6adb24ad2493.s3.ap-southeast-1.amazonaws.com/5180292774952/-OFF-UP-TO-25-until-16th-May-Yoko-Onsen-Quang-Hanh-Mineral-Bath-Ticket-528bbe85-fe15-457d-8835-9ea75b80e9f7.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                    class="w3-container"
+                    alt="Yoko Onsen Quang Hanh"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-quang-ninh/124656"
+                      target="_blank"
+                      >traveloka.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Bán Đảo Tuần Châu
+              </summary>
+              <article class="detail-content">
+                <p>
+                  Báo Đảo Tuần Châu được bình chọn là điểm du lịch “quyến rũ”
+                  nhất trên hành trình khám phá Hạ Long. Làn nước biển trong
+                  xanh, sạch sẽ với thảm cát trắng mịn trải dài hơn 6km sẽ mang
+                  đến cho bạn cảm giác thư giãn, thả lỏng sau những ngày mệt
+                  mỏi.
+                </p>
+                <p>
+                  Nơi đây còn địa điểm check-in ở Quảng Ninh được yêu thích với
+                  khu vui chơi giải trí hiện đại với những hoạt động thú vị như
+                  trình diễn nhạc nước, xiếc, các hoạt động vui chơi như lướt
+                  ván, đi môtô trượt nước, cano dù kéo, chèo thuyền Kayak…
+                </p>
+                <figure>
+                  <img
+                    src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-quang-ninh-3-1024x538.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                    class="w3-container"
+                    alt="Bán Đảo Tuần Châu"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-quang-ninh/124656"
+                      target="_blank"
+                      >traveloka.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đảo Cô Tô
+              </summary>
+              <article class="detail-content">
+                <p>
+                  Cô Tô là một địa điểm check in ở Quảng Ninh được nhiều du
+                  khách yêu thích, là một trong những hòn đảo đẹp nhất miền Bắc.
+                  Quần đảo này có hơn 50 đảo lớn nhỏ và đảo ngầm, mang vẻ đẹp
+                  hoang sơ và thơ mộng.
+                </p>
+                <p>
+                  Bãi biển Cầu Mỵ là điểm được check in nhiều nhất ở đảo Cô Tô
+                  vì nơi đây là địa điểm ngắm bình minh đẹp nhất quần đảo và có
+                  những lớp đá trơn mượt với nhiều màu sắc và hình thù được xếp
+                  chồng lên nhau, cực kỳ đẹp mắt. Bạn sẽ có những tấm ảnh sống
+                  ảo với background đẹp như tranh.
+                </p>
+                <figure>
+                  <img
+                    src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-quang-ninh-4.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                    class="w3-container"
+                    alt="Đảo Cô Tô"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-quang-ninh/124656"
+                      target="_blank"
+                      >traveloka.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Biển Cẩm Phả
+              </summary>
+              <article class="detail-content">
+                <p>
+                  Cẩm Phả là một nơi mang vẻ đẹp sơn thủy hữu tình, vừa có bãi
+                  biển trong xanh, vừa có những đảo đá, vách đá dựng đứng hùng
+                  vĩ. Nơi đây có đảo Rều, là vùng đất của cuộc sống hoang dã của
+                  hơn ngàn con khỉ, có Vịnh Bái Tử Long với hàng trăm hòn đảo
+                  núi đá vôi và sa phiến thạch, những bãi tắm còn nguyên vẹn vẻ
+                  đẹp hoang sơ. Những địa điểm này hàng năm có rất nhiều du
+                  khách ghé tham quan.
+                </p>
+                <p>
+                  Đền Cửa Ông cũng là một điểm du lịch tâm linh nổi tiếng ở khu
+                  vực biển Cẩm Phả, nằm trong một ngọn đồi cao tiếp giáp vịnh
+                  Bái Tử Long. Ngôi đền mang vẻ đẹp cổ kính này thu hút nhiều du
+                  khách đến thăm viếng, gửi gắm nỗi lòng. Đặc biệt, vào tháng
+                  Hai âm lịch hàng năm, nơi đây có lễ hội lớn, bà con địa phương
+                  về trẩy hội rất đông.
+                </p>
+                <figure>
+                  <img
+                    src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-quang-ninh-5.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                    class="w3-container"
+                    alt="Biển Cẩm Phả"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-quang-ninh/124656"
+                      target="_blank"
+                      >traveloka.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Khu du lịch Yên Tử
+              </summary>
+              <article class="detail-content">
+                <p>
+                  Nhắc đến những địa điểm du lịch tâm linh tại Quảng Ninh, phải
+                  nói đến vùng đất Phật Yên Tử. Khu du lịch này có hệ thống chùa
+                  chiền mang kiến trúc cổ độc đáo, hấp dẫn hàng nghìn Phật tử
+                  trên toàn quốc ghé thăm.
+                </p>
+                <p>
+                  Nổi tiếng nhất ở khu du lịch này là công trình kiến trúc tâm
+                  linh mang tên: chùa Trình. Điểm độc đáo nhất của nơi đây chính
+                  là vị trí tọa lạc đắc địa trên cao, ngôi chùa nhỏ bé dường như
+                  chạm tới mây trời.
+                </p>
+                <p>
+                  Thời điểm lý tưởng nhất để tham quan khu du lịch Yên Tử là mùa
+                  xuân trong khoảng tháng 1 đến tháng 3 âm lịch, tùy vào điều
+                  kiện thời tiết mỗi năm, khí hậu sẽ có sự thay đổi nhất định).
+                  Đây là thời điểm diễn ra những lễ hội lớn tại Yên Tử và có rất
+                  nhiều đoàn hành hương về đây tụ tập.
+                </p>
+                <figure>
+                  <img
+                    src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-quang-ninh-6.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                    class="w3-container"
+                    alt="Khu du lịch Yên Tử"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-quang-ninh/124656"
+                      target="_blank"
+                      >traveloka.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Bãi Cháy
+              </summary>
+              <article class="detail-content">
+                <p>
+                  Bãi Cháy cũng là một trong các địa điểm du lịch Quảng Ninh cực
+                  kỳ thu hút du khách, là bãi biển rộng nhất thành phố Hạ Long
+                  với bờ cát trắng kéo dài 1km, nước trong xanh và rất sạch. Dọc
+                  theo bờ biển là một hàng cây xanh kéo dài, mang đến một cảm
+                  giác yên bình và nhẹ nhàng, rất thích hợp là một nơi thư giãn.
+                </p>
+                <p>
+                  Đến đây, bạn có thể tham gia một số hoạt động như: thuê xe đạp
+                  đi trên bờ biển, ô tô lướt sóng, thuê diều,... và thưởng thức
+                  những món đặc sản từ vùng biển Quảng Ninh.
+                </p>
+                <p>
+                  Đến bãi Cháy, bạn cũng không nên bỏ qua khu chợ đêm, nơi
+                  chuyên bán những món đồ lưu niệm được làm từ vỏ ốc, vỏ sò,
+                  chuông gió và mỹ nghệ than đá - mang đặc trưng của vùng biển
+                  Quảng Ninh. Ở đây, còn có những quán ăn chuyên hải sản đặc
+                  trưng.
+                </p>
+                <figure>
+                  <img
+                    src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-quang-ninh-7.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                    class="w3-container"
+                    alt="Bãi Cháy"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-quang-ninh/124656"
+                      target="_blank"
+                      >traveloka.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Biển Vân Đồn
+              </summary>
+              <article class="detail-content">
+                <p>
+                  Vốn là một thành phố nằm bên bờ biển nên những địa điểm thu
+                  hút du khách nhất tại Quảng Nam cũng chính là những bãi biển
+                  và Vân Đồn là một nơi được nhiều du khách lựa chọn để đi du
+                  lịch cùng gia đình và bạn bè.
+                </p>
+                <p>
+                  Đây là một quần thể bãi biển trải dài, mang vẻ đẹp hoang sơ
+                  riêng biệt nhưng đủ đẹp làm say đắm lòng người.
+                </p>
+                <p>
+                  Nổi tiếng nhất ở biển Vân Đồn hẳn là bãi Dài, cách thành phố
+                  Hạ Long 50km về phía Đông và Đông Nam. Hiện tại, hệ thống này
+                  được đầu tư “mạnh tay” với hệ thống nghỉ dưỡng quốc tế nhưng
+                  vẫn giữ được nét hoang sơ vốn có. Cây cầu tàu gỗ là một biểu
+                  tượng của bãi Dài Vân Đồn, rất nhiều người đã check in tại
+                  đây. Không ít đôi trẻ chọn cây cầu này là nơi ghi lại bộ ảnh
+                  cưới của mình.
+                </p>
+                <p>
+                  Ngoài ra, biển Vân Đồn còn có biển Quan Lạn, bãi tắm Minh
+                  Châu, bãi Sơn Hào, bãi Việt Mỹ… đều là những điểm đến yêu
+                  thích của du khách.
+                </p>
+                <figure>
+                  <img
+                    src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-quang-ninh-8-1024x705.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                    class="w3-container"
+                    alt="Biển Vân Đồn"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-quang-ninh/124656"
+                      target="_blank"
+                      >traveloka.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </article>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Biển Trà Cổ
+              </summary>
+              <article class="detail-content">
+                <p>
+                  Biển Trà Cổ Móng Cái trở thành điểm sáng của du lịch Quảng
+                  Ninh, là một trong những đường bờ biển dài và đẹp nhất tại
+                  Việt Nam. Được bao quanh bởi rừng ngập mặn nguyên sinh, những
+                  rặng phi lao, nước xanh, mây trắng nên biển Trà Cổ thực sự là
+                  một “thiên đường sống ảo” đối với khách du lịch trẻ.
+                </p>
+                <p>
+                  Để tận hưởng trọn vẹn vẻ đẹp của biển Trà Cổ và có những tấm
+                  hình check in đẹp nhất, bạn nên đến đây vào thời điểm tháng 4
+                  - tháng 7 hàng năm. Thời tiết lúc này không nắng gắt, dễ chịu,
+                  nước biển yên ả, trong xanh, đẹp hoàn hảo. Ngoài ra, vào cuối
+                  tháng 5 - đầu tháng 6 âm lịch, tại biển Trà Cổ, người ta
+                  thường tổ chức những lễ hội truyền thống, mang bản sắc vùng
+                  miền vô cùng thú vị.
+                </p>
+                <figure>
+                  <img
+                    src="https://ik.imagekit.io/tvlk/blog/2022/02/dia-diem-du-lich-quang-ninh-9.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                    class="w3-container"
+                    alt="Biển Trà Cổ"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-quang-ninh/124656"
+                      target="_blank"
+                      >traveloka.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </article>
+            </details>
+          </li>
+        </ol>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="tiemnang">
+        <h1 class="w3-center" style="font-size: 50px">TIỀM NĂNG PHÁT TRIỂN</h1>
+        <article style="font-size: 20px; line-height: 1.7">
+          <p>
+            <mark
+              ><strong
+                >Tiềm năng phát triển Quảng Ninh sau sáp nhập</strong
+              ></mark
+            >
+          </p>
+
+          <p>
+            Quảng Ninh là một trong những đầu tàu kinh tế - du lịch của khu vực
+            phía Bắc, sở hữu các lợi thế độc đáo cả về thiên nhiên, văn hóa và
+            con người. Với <u>Vịnh Hạ Long</u> được UNESCO công nhận hai lần,
+            mạng lưới di sản văn hóa - lịch sử phong phú, các vùng mỏ than giàu
+            tiềm năng, hệ thống cảng biển và cửa khẩu quan trọng, Quảng Ninh hội
+            tụ các yếu tố thiên nhiên và nhân tạo để phát triển bền vững.
+          </p>
+
+          <p>
+            Tỉnh đã liên tục đổi mới, sáng tạo trong quản lý và phát triển kinh
+            tế - xã hội, thể hiện qua các chỉ số như
+            <u>tăng trưởng GRDP bình quân 5 năm đạt 10,7%</u>,
+            <u>thu nhập bình quân đầu người hơn 5.000 USD</u> và
+            <u>vị trí dẫn đầu PCI 6 năm liên tiếp</u>. Các lĩnh vực chủ lực như
+            than, điện, cảng biển, cửa khẩu và du lịch duy trì mức lương cao,
+            góp phần nâng cao chất lượng sống người dân.
+          </p>
+
+          <p>
+            Hạ tầng giao thông, đô thị, dịch vụ du lịch được đầu tư đồng bộ,
+            hiện đại, tạo nền tảng để Quảng Ninh trở thành trung tâm dịch vụ,
+            công nghiệp, đô thị và du lịch quốc tế. Tỉnh chủ động trong các đối
+            sách phát triển bền vững, thích ứng biến đổi khí hậu, đồng thời
+            triển khai các chính sách an sinh xã hội, giảm khoảng cách giàu
+            nghèo, đảm bảo người dân được hưởng thành quả tăng trưởng.
+          </p>
+
+          <p>
+            Sau sáp nhập, Quảng Ninh được kỳ vọng trở thành
+            <u>thành phố trực thuộc Trung ương</u>, với GRDP bình quân đầu người
+            dự kiến đạt hơn <u>15.000 USD/năm vào 2030</u>, đô thị phát triển
+            theo mô hình tăng trưởng xanh, trung tâm kinh tế biển và cửa ngõ của
+            Vùng kinh tế trọng điểm Bắc Bộ. Đây sẽ là nền tảng để Quảng Ninh
+            tiến tới mục tiêu năm <u>2045</u> trở thành tỉnh dịch vụ, công
+            nghiệp hiện đại, đô thị lớn, có sức cạnh tranh quốc tế cao, với đời
+            sống người dân tương đương các nước phát triển.
+          </p>
+
+          <p>
+            Tiềm năng phát triển của Quảng Ninh dựa trên ba trụ cột chính:
+            <u>thiên nhiên độc đáo</u>, <u>hạ tầng hiện đại</u> và
+            <u>tư duy đổi mới sáng tạo của lãnh đạo và cộng đồng</u>. Kết hợp
+            với kế hoạch dài hạn, các đề án trọng điểm và chiến lược phát triển
+            bền vững, Quảng Ninh sẽ tiếp tục là cực tăng trưởng kinh tế, du
+            lịch, dịch vụ, và trung tâm đổi mới sáng tạo của phía Bắc Việt Nam.
+          </p>
+        </article>
+        <p style="font-size: 15px" class="w3-center">
+          (Nguồn thông tin:
+          <a
+            href="https://baoquangninh.vn/quang-ninh-tam-nhin-va-khat-vong-phat-trien-3172439.html"
+            target="_blank"
+            >baoquangninh.vn</a
+          >)
+        </p>
+      </section>
+      <hr />
+    </main>
+
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>HẾT!</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        if (navMenu) navMenu.classList.toggle("w3-hide");
+      }
+    </script>
+    <script>
+      const menuScroll = document.querySelector(".menu-scroll");
+      const btnLeft = document.querySelector(".left-btn");
+      const btnRight = document.querySelector(".right-btn");
+      const step = 200;
+      if (btnRight && btnLeft && menuScroll) {
+        btnRight.addEventListener("click", () => {
+          menuScroll.scrollLeft += step;
+        });
+        btnLeft.addEventListener("click", () => {
+          menuScroll.scrollLeft -= step;
+        });
+      }
+    </script>
+  </body>
+</html>
